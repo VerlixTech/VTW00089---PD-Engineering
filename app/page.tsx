@@ -1,11 +1,13 @@
 import Image from "next/image";
 import { Header } from "@/components/header"
+import { HeroSlider } from "@/components/hero-slider";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-           <Header />
+    <main className="min-h-screen">
+      <Header />
+      <HeroSlider />
 
-    </div>
+    </main>
   );
 }

@@ -50,7 +50,7 @@ export function Header() {
                   "text-xl lg:text-2xl font-bold transition-colors duration-300 text-[#000094]"
                 
               >
-                SAGA Engineering
+                Sample
               </h1>
             </div>
           </Link>

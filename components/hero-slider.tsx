@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { useRouter } from "next/navigation"
+import Image from "next/image"
 
 const slides = [
    {
@@ -11,25 +12,9 @@ const slides = [
     title: "Design, installation & maintenance",
     description:
       "Our expert team provides comprehensive installation and commissioning services for all industrial equipment, ensuring optimal performance and safety.",
-    image: "/Design, installation & maintenance.jpeg",
+    image: "/design-installation-maintenance.jpeg",
     cta: "See More",
-  },
-  {
-    id: 1,
-    title: "Machinery Import & Supply",
-    description:
-      "We specialize in the import and supply of a wide range of industrial and engineering equipment, including pumps, compressors, conveyors, motors, and electrical systems.",
-    image: "/Machinery Import & Supply.jpeg",
-    cta: "See More",
-  },
-  {
-    id: 2,
-    title: "General Maintenance & Support",
-    description:
-      "Our General Maintenance and Support services cover preventive and corrective maintenance for industrial machinery, electrical systems, and mechanical components.",
-    image: "/General Maintenance & Support.jpeg",
-    cta: "See More",
-  },
+  }
 ]
 
 export function HeroSlider() {
@@ -67,7 +52,7 @@ export function HeroSlider() {
   }
 
   return (
-    <section id="home" className="relative h-[80vh] overflow-hidden">
+    <section id="home" className="relative h-[80vh] ">
   {slides.map((slide, index) => (
     <div
       key={slide.id}
@@ -80,10 +65,12 @@ export function HeroSlider() {
       <div className="absolute inset-0 bg-black/70 z-10" />
 
       {/* Background Image */}
-      <img
-        src={slide.image || "/placeholder.svg"}
+      <Image
+        src="/slide1.jpeg"
         alt={slide.title}
         className="w-full h-[80vh] object-cover"
+        width={1920}
+        height={1080}
       />
 
       {/* Content */}
@@ -115,23 +102,6 @@ export function HeroSlider() {
     </div>
   ))}
 
-  {/* Navigation Arrows */}
-  {/* <button
-    onClick={prevSlide}
-    className="absolute left-4 top-1/2 -translate-y-1/2 z-30 p-2 rounded-full bg-white/20 hover:bg-white/30 transition"
-    aria-label="Previous slide"
-  >
-    <ChevronLeft className="w-6 h-6 text-white" />
-  </button>
-  <button
-    onClick={nextSlide}
-    className="absolute right-4 top-1/2 -translate-y-1/2 z-30 p-2 rounded-full bg-white/20 hover:bg-white/30 transition"
-    aria-label="Next slide"
-  >
-    <ChevronRight className="w-6 h-6 text-white" />
-  </button> */}
-
-  {/* Slide Indicators */}
   <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-30 flex space-x-3">
     {slides.map((_, index) => (
       <button
