@@ -1,4 +1,3 @@
-import { Separator } from "@/components/ui/separator"
 import { Linkedin, Facebook, Twitter, Youtube, Instagram, Play } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
