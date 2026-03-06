@@ -1,136 +1,139 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
-import { Menu, X } from "lucide-react"
-import { cn } from "@/lib/utils"
-import Link from "next/link"
-import { usePathname } from "next/navigation"
-import Image from "next/image"
+import { useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { Menu, X, ChevronDown } from "lucide-react";
 
 export function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [isScrolled, setIsScrolled] = useState(false)
-  const pathname = usePathname()
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10)
-    }
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
-
-  const navItems = [
-    { name: "Home", href: "/" },
-    { name: "About", href: "/about" },
-    { name: "Services", href: "/services" },
-  ]
+  const [mobileOpen, setMobileOpen] = useState(false);
+  const [mobileServiceOpen, setMobileServiceOpen] = useState(false);
 
   return (
-    <header
-      className=
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white"
-    >
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 lg:h-16">
+    <header className="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-black ">
+      <div className="max-w-7xl mx-auto px-6 lg:px-4">
+        <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 rounded-full flex items-center justify-center">
-              <Image
-                src="/Logo.webp"
-                alt="SAGA Engineering"
-                width={32}
-                height={32}
-                className="w-14 h-auto"
-              />
-            </div>
-            <div className="hidden sm:block">
-              <h1
-                className=
-                  "text-xl lg:text-2xl font-bold transition-colors duration-300 text-[#000094]"
-                
-              >
-                Sample
-              </h1>
-            </div>
+
+          <Link href="/" className="flex items-center gap-2">
+            <Image src="/logo.svg" alt="PD Engineering" width={50} height={50} />
           </Link>
 
-          <nav className="hidden md:flex items-center space-x-8 ">
-  {navItems.map((item) => {
-    const isActive = pathname === item.href;
+          {/* Desktop Navigation */}
 
-    return (
-      <Link
-        key={item.name}
-        href={item.href}
-        className={cn(
-          "transition-colors duration-300 font-medium relative",
-          isScrolled
-            ? "text-foreground hover:text-primary"
-            : "text-black hover:text-[#000094]",
-          isActive && (isScrolled ? "text-primary font-semibold" : "text-black font-semibold")
-        )}
-      >
-        {item.name}
-        {isActive && (
-          <span className="absolute left-0 bottom-0 mt-1 w-full h-0.5 bg-primary rounded-full" />
-        )}
-      </Link>
-    );
-  })}
-</nav>
-
-
-          {/* Contact Button & Mobile Menu */}
-          <div className="flex items-center space-x-4">
-            <Link href="/contact" className="hidden sm:inline-flex">
-              <button
-                className="transition-all duration-300 text-white  rounded-full bg-[#000094] p-2 px-4 cursor-pointer"
-              >
-                Contact Us
-              </button>
+          <nav className="hidden lg:flex items-center gap-10 text-white font-medium">
+            <Link href="/" className="hover:text-[#89CA29] transition">
+              Home
             </Link>
 
-            {/* Mobile Menu Button */}
-            <button
-              className={cn(
-                "md:hidden p-2 transition-colors duration-300",
-                isScrolled ? "text-foreground" : "text-black",
-              )}
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              aria-label="Toggle menu"
+            <Link href="/about" className="hover:text-[#89CA29] transition">
+              About Us
+            </Link>
+
+            {/* Services Dropdown */}
+
+            <div className="relative group">
+              <button className="flex items-center gap-1 hover:text-[#89CA29] transition">
+                Our Services
+                <ChevronDown size={16} />
+              </button>
+
+              <div className="absolute -ml-4 left-0 top-full pt-4 opacity-0 invisible translate-y-2 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-200">
+                <div className="bg-black border border-white/10 rounded-xl p-4 w-36 shadow-lg">
+                  <Link href="#" className="block py-2 hover:text-[#89CA29]">
+                    Engineer
+                  </Link>
+
+                  <Link href="#" className="block py-2 hover:text-[#89CA29]">
+                    Academy
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            <Link href="/projects" className="hover:text-[#89CA29] transition">
+              Projects
+            </Link>
+
+            <Link href="/news" className="hover:text-[#89CA29] transition">
+              News & Events
+            </Link>
+          </nav>
+
+          {/* Contact Button */}
+
+          <div className="hidden lg:block">
+            <Link
+              href="/contact"
+              className="px-6 py-2 rounded-full text-white text-md font-semibold bg-gradient-to-r from-[#6CC1FF] to-[#89CA29] hover:scale-105 transition"
             >
-              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+              Contact Us
+            </Link>
+          </div>
+
+          {/* Mobile Menu Button */}
+
+          <button
+            className="lg:hidden text-white"
+            onClick={() => setMobileOpen(!mobileOpen)}
+          >
+            {mobileOpen ? <X /> : <Menu />}
+          </button>
+        </div>
+      </div>
+
+      {/* Mobile Menu */}
+
+      {mobileOpen && (
+        <div className="lg:hidden bg-black border-t border-white/10">
+          <div className="flex flex-col px-6 py-6 gap-4 text-white">
+            <Link href="/" className="hover:text-[#89CA29]">
+              Home
+            </Link>
+
+            <Link href="/about" className="hover:text-[#89CA29]">
+              About Us
+            </Link>
+
+            {/* Mobile Services */}
+
+            <button
+              onClick={() => setMobileServiceOpen(!mobileServiceOpen)}
+              className="flex items-center justify-between hover:text-[#89CA29]"
+            >
+              Our Services
+              <ChevronDown size={18} />
             </button>
+
+            {mobileServiceOpen && (
+              <div className="pl-4 flex flex-col gap-2 text-sm">
+                <Link href="#" className="hover:text-[#89CA29]">
+                  Engineer
+                </Link>
+
+                <Link href="#" className="hover:text-[#89CA29]">
+                  Academy
+                </Link>
+              </div>
+            )}
+
+            <Link href="/projects" className="hover:text-[#89CA29]">
+              Projects
+            </Link>
+
+            <Link href="/news" className="hover:text-[#89CA29]">
+              News & Events
+            </Link>
+
+            <Link
+              href="/contact"
+              className="mt-4 text-center py-2 rounded-full bg-gradient-to-r from-blue-500 to-[#89CA29]"
+            >
+              Contact Us
+            </Link>
           </div>
         </div>
-
-        {/* Mobile Navigation */}
-        {isMenuOpen && (
-          <div className="md:hidden  rounded-b-xl">
-            <nav className="px-4 py-6 space-y-4">
-              {navItems.map((item) => (
-                <Link
-                  key={item.name}
-                  href={item.href}
-                  className={cn(
-                    "block text-foreground hover:text-primary transition-colors duration-200 font-medium",
-                    pathname === item.href && "text-primary font-semibold",
-                  )}
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {item.name}
-                </Link>
-              ))}
-              <Link href="/contact" className="block">
-                <button className="w-full p-2 mt-4 bg-[#000094] rounded-4xl text-white cursor-pointer" onClick={() => setIsMenuOpen(false)}>
-                  Contact Us
-                </button>
-              </Link>
-            </nav>
-          </div>
-        )}
-      </div>
+      )}
     </header>
-  )
+  );
 }
