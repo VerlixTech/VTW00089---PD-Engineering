@@ -4,9 +4,12 @@ import Image from "next/image";
 
 export function AboutUs() {
   return (
-    <section className="relative bg-white  text-black ">
-      {/* Grid Background */}
-      <div className="absolute inset-0 grid-bg opacity-30"></div>
+    <section 
+      className="relative bg-white  text-black bg-no-repeat bg-cover bg-center"
+      style={{
+        backgroundImage: "url('/bg-Net.svg')",
+      }}
+    >
 
       {/* Content */}
       <div className="relative max-w-7xl mx-auto px-6 py-10 grid md:grid-cols-2 gap-16 items-center">
