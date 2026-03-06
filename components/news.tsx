@@ -23,7 +23,7 @@ const news = [
 
 const News = () => {
   return (
-    <section className="py-20 px-6">
+    <section className="py-10 px-6">
       <div className="max-w-7xl mx-auto text-center">
         {/* Heading */}
         <h2 className="text-lg md:text-[40px] font-bold mb-4">Latest News</h2>

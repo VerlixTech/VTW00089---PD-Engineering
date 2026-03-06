@@ -31,7 +31,7 @@ export default function SuccessProjects() {
         <div className="grid md:grid-cols-2 mb-12 items-center">
           <h2 className="text-2xl md:text-[40px] font-bold">SUCCESS PROJECTS</h2>
 
-          <p className="text-gray-600  text-base md:text-xl">
+          <p className="text-gray-600  text-base md:text-xl border-l-4 pl-4 border-[#1A1A1A] max-md:mt-4">
             From steam systems to complete industrial solutions, we deliver results that meet client expectations and industry standards.
           </p>
         </div>

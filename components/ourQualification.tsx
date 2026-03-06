@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const OurQualification = () => {
   return (
-    <section className=" md:pt-20  md:mt-20 px-6 ">
+    <section className=" md:pt-10  md:mt-15 px-6 ">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 mb-[2%]">
           <div>

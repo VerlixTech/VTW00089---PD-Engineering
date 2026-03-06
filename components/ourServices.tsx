@@ -35,63 +35,34 @@ const OurServices = () => {
           readable content of a page when looking at its layout.
         </p>
 
-        {/* Cards */}
-        <div className="flex flex-wrap justify-center gap-8">
+        {/* Desktop Cards y */}
+        <div className="hidden md:flex flex-wrap justify-center gap-8">
           {services.map((service, index) => (
             <div key={index} className="flex flex-col w-[348px]">
-              {/* Cards with image on top, description on bottom (cards 1 & 3) */}
               {service.position === "bottom" && (
                 <>
-                  {/* Image Container */}
                   <div className="relative w-full h-[404px] overflow-hidden">
-                    <Image
-                      src={service.image}
-                      alt={service.title}
-                      fill
-                      className="object-cover"
-                    />
-                    {/* Dark overlay */}
+                    <Image src={service.image} alt={service.title} fill className="object-cover" />
                     <div className="absolute inset-0 bg-black/40"></div>
-
-                    {/* Title - pinned to bottom of image */}
-                    <div className="absolute bottom-[10%] left-0 right-0 flex items-end justify-center pb-4">
-                      <h3 className="text-white text-3xl font-bold text-center px-4">
-                        {service.title}
-                      </h3>
+                    <div className="absolute bottom-[15%] left-0 right-0 flex items-end justify-center pb-4">
+                      <h3 className="text-white text-3xl font-semibold text-center px-4">{service.title}</h3>
                     </div>
                   </div>
-
-                  {/* Description Box with Gradient */}
-                  <div className="p-10 text-base text-black text-center bg-gradient-to-r from-[#5fa8d3] via-[#7bc76a] to-[#89CA29] h-[184px] flex items-center justify-center">
+                  <div className="p-10 text-base text-black text-center bg-gradient-to-r from-[#5fa8d3] via-[#7bc76a] to-[#89CA29] h-[180px] flex items-center justify-center">
                     <p className="leading-relaxed">{service.description}</p>
                   </div>
                 </>
               )}
-
-              {/* Card with description on top, image on bottom (card 2) */}
               {service.position === "top" && (
                 <>
-                  {/* Description Box with Gradient */}
                   <div className="p-10 text-base text-black text-center bg-gradient-to-r from-[#5fa8d3] via-[#7bc76a] to-[#89CA29] h-[180px] flex items-center justify-center">
                     <p className="leading-relaxed">{service.description}</p>
                   </div>
-
-                  {/* Image Container */}
                   <div className="relative w-full h-[404px] overflow-hidden">
-                    <Image
-                      src={service.image}
-                      alt={service.title}
-                      fill
-                      className="object-cover"
-                    />
-                    {/* Dark overlay */}
+                    <Image src={service.image} alt={service.title} fill className="object-cover" />
                     <div className="absolute inset-0 bg-black/40"></div>
-
-                    {/* Title - pinned to top of image */}
-                    <div className="absolute top-[10%] left-0 right-0 flex items-start justify-center pt-4">
-                      <h3 className="text-white text-3xl font-bold text-center px-4">
-                        {service.title}
-                      </h3>
+                    <div className="absolute top-[15%] left-0 right-0 flex items-start justify-center pt-4">
+                      <h3 className="text-white text-3xl font-semibold text-center px-4">{service.title}</h3>
                     </div>
                   </div>
                 </>
@@ -100,7 +71,26 @@ const OurServices = () => {
           ))}
         </div>
 
-        <button className="mt-14 border border-black px-8 py-2 hover:bg-black hover:text-white transition duration-300 text-base font-semibold tracking-wider">
+        {/* Mobile Cards */}
+        <div className="flex md:hidden flex-col gap-6 justify-center items-center">
+          {services.map((service, index) => (
+            <div key={index} className="flex flex-col w-full max-w-[358px] px-auto">
+              <div className="relative w-full h-[220px] overflow-hidden">
+                <Image src={service.image} alt={service.title} fill className="object-cover" />
+                <div className="absolute inset-0 bg-black/40"></div>
+                <div className="absolute bottom-0 left-0 right-0 flex items-end justify-center pb-4">
+                  <h3 className="text-white text-xl font-bold text-center px-4">{service.title}</h3>
+                </div>
+              </div>
+              <div className="p-6 text-sm text-black text-center bg-gradient-to-r from-[#5fa8d3] via-[#7bc76a] to-[#89CA29] flex items-center justify-center min-h-[110px]">
+                <p className="leading-relaxed">{service.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* View More Button */}
+        <button className="mt-14 border border-black px-10 py-3 hover:bg-black hover:text-white transition duration-300 text-sm uppercase tracking-wider">
           View More
         </button>
       </div>
