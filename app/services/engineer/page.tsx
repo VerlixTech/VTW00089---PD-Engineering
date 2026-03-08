@@ -1,5 +1,7 @@
 import { Header } from "@/components/header";
 import PageHero from "@/components/pageHero";
+import CoreEngineeringServices from "./coreServices";
+import Banner from "@/components/banner";
 
 export const metadata = {
   title: "Engineer Services - PD Engineering & Academy",
@@ -16,6 +18,8 @@ export default function EngineerServicesPage() {
         heading="Redefining Engineering Excellence"
         subHeading="PD ENGINEERING & ACADEMY (Pvt) Ltd offers a robust range of services and expertise in the MEP sector"
       />
+      <CoreEngineeringServices/>
+      <Banner />
     </main>
   )
 }
