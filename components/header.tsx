@@ -26,7 +26,7 @@ export function Header() {
               Home
             </Link>
 
-            <Link href="/about" className="hover:text-[#89CA29] transition">
+            <Link href="/aboutUs" className="hover:text-[#89CA29] transition">
               About Us
             </Link>
 
@@ -40,11 +40,11 @@ export function Header() {
 
               <div className="absolute -ml-4 left-0 top-full pt-4 opacity-0 invisible translate-y-2 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-200">
                 <div className="bg-black border border-white/10 rounded-xl p-4 w-36 shadow-lg">
-                  <Link href="#" className="block py-2 hover:text-[#89CA29]">
+                  <Link href="/services/engineer" className="block py-2 hover:text-[#89CA29]">
                     Engineer
                   </Link>
 
-                  <Link href="#" className="block py-2 hover:text-[#89CA29]">
+                  <Link href="/services/academy" className="block py-2 hover:text-[#89CA29]">
                     Academy
                   </Link>
                 </div>
@@ -91,7 +91,7 @@ export function Header() {
               Home
             </Link>
 
-            <Link href="/about" className="hover:text-[#89CA29]">
+            <Link href="/aboutUs" className="hover:text-[#89CA29]">
               About Us
             </Link>
 
@@ -107,11 +107,11 @@ export function Header() {
 
             {mobileServiceOpen && (
               <div className="pl-4 flex flex-col gap-2 text-sm">
-                <Link href="#" className="hover:text-[#89CA29]">
+                <Link href="/services/engineer" className="hover:text-[#89CA29]">
                   Engineer
                 </Link>
 
-                <Link href="#" className="hover:text-[#89CA29]">
+                <Link href="/services/academy" className="hover:text-[#89CA29]">
                   Academy
                 </Link>
               </div>

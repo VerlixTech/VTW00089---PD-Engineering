@@ -11,7 +11,7 @@ const PageHero = ({ title, heading, subHeading }: PageHeroProps) => {
   return (
     <section
       className="relative w-full flex items-center justify-center mt-20"
-      style={{ background: "#000", minHeight: "340px" }}
+      style={{ background: "#000", minHeight: "570px" }}
     >
       {/* background image */}
       <div
@@ -24,12 +24,12 @@ const PageHero = ({ title, heading, subHeading }: PageHeroProps) => {
         }}
       />
 
-      <div className="relative z-10 text-center px-6 max-md:py-12">
+      <div className="relative z-10 text-center px-6 max-md:py-12 mt-[-10%]">
         {/* Badge */}
         {title && (
           <div className="inline-flex items-center gap-2 border border-blue-500 rounded-full px-5 py-2 mb-6 bg-[#0a0f1e]">
             <BadgeCheck className="w-5 h-5 text-blue-400" />
-            <span className="text-blue-400 text-sm font-semibold uppercase tracking-widest">
+            <span className="text-blue-400 text-xs font-semibold uppercase tracking-widest">
               {title}
             </span>
           </div>
@@ -38,7 +38,7 @@ const PageHero = ({ title, heading, subHeading }: PageHeroProps) => {
         {/* Main heading with gradient */}
         {heading && (
           <h1
-            className="text-4xl md:text-5xl font-bold mb-4"
+            className="text-4xl md:text-5xl font-bold mb-4 max-w-4xl mx-auto "
             style={{
               background: "linear-gradient(to right, #5fa8d3, #7bc76a, #89CA29)",
               WebkitBackgroundClip: "text",
@@ -51,8 +51,8 @@ const PageHero = ({ title, heading, subHeading }: PageHeroProps) => {
         )}
 
         {subHeading && (
-          <div>
-            <h2 className={`text-white text-[32px] text-center ${title === 'About Us' ? 'font-markScript' : ''}`}>
+          <div className="mt-[3%]">
+            <h2 className={`text-white text-center max-w-2xl mx-auto ${title === 'About Us' ? 'font-markScript text-[32px]' : 'text-sm lg:text-xl'}`}>
               {subHeading}
             </h2>
           </div>
