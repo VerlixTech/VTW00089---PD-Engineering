@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const projects = [
   {
@@ -67,9 +68,9 @@ export default function SuccessProjects() {
 
         {/* Button */}
         <div className="flex justify-center mt-4">
-          <button className="mt-14 border border-black px-8 py-2 hover:bg-black hover:text-white transition duration-300 text-base font-semibold tracking-wider">
+          <Link href="/projects" className="mt-14 border inline-block text-center border-black px-8 py-2 hover:bg-black hover:text-white transition duration-300 text-base font-semibold tracking-wider">
             View More
-          </button>
+          </Link>
         </div>
 
       </div>
