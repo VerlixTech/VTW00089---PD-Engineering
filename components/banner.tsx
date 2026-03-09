@@ -1,4 +1,9 @@
-const Banner = () => {
+interface BannerProps {
+  heading: string;
+  description: string;
+}
+
+const Banner = ({ heading, description }: BannerProps) => {
   return (
     <section className="px-6 py-2 md:py-12 ">
       <div
@@ -12,12 +17,14 @@ const Banner = () => {
         {/* Left Content */}
         <div className="flex-1 max-w-lg">
           <h2 className="text-white text-3xl md:text-4xl font-bold mb-4 leading-tight">
-            Let&apos;s Build Something <br /> Great Together
+            {/* Let&apos;s Build Something <br /> Great Together */}
+            {heading}
           </h2>
           <p className="text-gray-400 text-sm leading-relaxed">
-            Let&apos;s build something great together! Reach out to our team today
+            {description}
+            {/* Let&apos;s build something great together! Reach out to our team today
             to discuss your project, explore solutions, and turn your ideas into
-            reality with expert guidance and support.
+            reality with expert guidance and support. */}
           </p>
         </div>
 
