@@ -2,7 +2,7 @@ import { Header } from "@/components/header";
 import PageHero from "@/components/pageHero";
 import { Metadata } from "next";
 import CompanyOverview from "./companyOverview";
-
+import CoreValues from "./coreValues";
 
 export const metadata: Metadata = {
     title: "About Us - PD Engineering & Academy",
@@ -19,6 +19,7 @@ export default function AboutUsPage () {
                 subHeading="Powering Performance & Developing Professionals"
             />
             <CompanyOverview/>
+            <CoreValues/>
         </main>
     )
 }

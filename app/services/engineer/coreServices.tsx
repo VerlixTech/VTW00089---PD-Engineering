@@ -53,7 +53,7 @@ const iconGradientStyle = {
 const CoreEngineeringServices = () => {
   return (
     <section className="py-16 px-6">
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         <h2 className="text-2xl md:text-3xl font-bold text-[#1E3A8A] mb-2">
           Core Engineering Services
         </h2>
