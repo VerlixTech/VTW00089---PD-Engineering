@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Header } from "@/components/header"
+import { Header } from "@/components/header";
 import { HeroSlider } from "@/components/hero-slider";
 import { AboutUs } from "@/components/aboutus";
 import WhyChooseUs from "@/components/why-chooseUs";
@@ -16,19 +16,15 @@ export default function Home() {
     <main className="min-h-screen ">
       <Header />
       <HeroSlider />
-            <AboutUs />
-            <WhyChooseUs />
-            <OurServices />
-            <SuccessProjects />
-            <Gallery />
-            <Partners />
-            <News/>
-            <OurQualification />
-            <Banner />
-
-           
-            
-
+      <AboutUs />
+      <WhyChooseUs />
+      <OurServices />
+      <SuccessProjects />
+      <Gallery />
+      <Partners />
+      <News />
+      <OurQualification />
+      <Banner />
     </main>
   );
 }
