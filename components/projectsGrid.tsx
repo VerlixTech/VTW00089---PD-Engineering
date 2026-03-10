@@ -25,17 +25,17 @@ const ProjectsGrid = () => {
 
               {/* Content */}
               <div className="flex flex-col justify-center p-4 md:p-5 gap-1.5 md:gap-2">
-                <h3 className="text-xs md:text-sm font-bold text-gray-900 leading-snug uppercase">
+                <h3 className="text-base md:text-xl font-bold text-gray-900 leading-snug uppercase">
                   {project.title}
                 </h3>
 
-                <p className="text-gray-500 text-xs md:text-sm leading-relaxed line-clamp-3 md:line-clamp-none">
+                <p className="text-[#475569] text-sm md:text-base leading-relaxed line-clamp-3 md:line-clamp-none">
                   {project.description}
                 </p>
 
                 <ul className="space-y-1 mt-1 md:mt-2">
                   {project.highlights.map((highlight, i) => (
-                    <li key={i} className="flex items-start gap-2 text-xs md:text-sm text-gray-700">
+                    <li key={i} className="flex items-start gap-2 text-xs md:text-sm text-[#1E293B]">
                       <CheckCircle2 className="w-3.5 h-3.5 md:w-4 md:h-4 text-[#89CA29] flex-shrink-0 mt-0.5" />
                       <span className="flex-1">{highlight}</span>
                     </li>
@@ -44,7 +44,7 @@ const ProjectsGrid = () => {
 
 
                 {project.status && (
-                  <p className="text-[10px] md:text-xs text-gray-400 font-medium tracking-wide mt-1 md:mt-2 uppercase">
+                  <p className="text-[10px] md:text-xs text-[#94A3B8] font-medium tracking-wide mt-1 md:mt-2 uppercase">
                     Status: {project.status}
                   </p>
                 )}

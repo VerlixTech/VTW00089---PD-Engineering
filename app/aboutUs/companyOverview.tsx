@@ -11,22 +11,22 @@ const CompanyOverview = () => {
   const [expanded, setExpanded] = useState(false);
 
   return (
-    <section className="py-4 px-6">
+    <section className="py-12 px-4 md:py-16 md:px-6 min-h-screen">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div className="flex flex-col">
-            <div className="inline-flex items-center gap-2 border border-gray-300 rounded-full bg-gray-100 px-4 py-1 mb-5 w-fit font-semibold">
+            <div className="inline-flex items-center gap-2 border border-gray-300 rounded-full bg-gray-100 px-4 py-1 max-md:mt-4 mb-5 w-fit font-semibold">
               <BadgeCheck className="w-4 h-4 text-[#3B82F6]" />
               <span className="text-[#3B82F6] text-xs uppercase tracking-widest">
                 Company Overview
               </span>
             </div>
 
-            <h2 className="text-5xl font-bold text-gray-900 mb-6 leading-tight">
-              PD Engineering & <br /> Academy
+            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+              PD Engineering & <br className="max-md:hidden" /> Academy
             </h2>
 
-            <p className="text-gray-500 text-base leading-relaxed mb-4">
+            <p className="text-[#475569] text-sm md:text-base leading-relaxed mb-4">
               PD Engineering & Academy (Pvt) Ltd is a specialized HVAC and MEP
               solutions provider committed to delivering high-quality
               engineering services and professional technical training. With
@@ -36,7 +36,7 @@ const CompanyOverview = () => {
               diverse range of commercial, industrial, and hospitality projects.
             </p>
 
-            <p className="text-gray-500 text-base leading-relaxed mb-6">
+            <p className="text-[#475569] text-sm md:text-base leading-relaxed mb-6">
               We operate across two core sectors: engineering contracting and
               professional training. On the contracting side, we provide
               comprehensive HVAC and electromechanical services, including
@@ -52,7 +52,7 @@ const CompanyOverview = () => {
 
             {expanded && (
               <div>
-                <p className="text-gray-500 text-base leading-relaxed mb-6">
+                <p className="text-[#475569] text-sm md:text-base leading-relaxed mb-6">
                   Our procurement and trading division is structured to support
                   urgent industrial requirements by sourcing and importing spare
                   parts and equipment globally. From PCBs, fan motors, and
@@ -63,7 +63,7 @@ const CompanyOverview = () => {
                   operational performance.
                 </p>
 
-                <p className="text-gray-500 text-base leading-relaxed mb-6">
+                <p className="text-[#475569] text-sm md:text-base leading-relaxed mb-6">
                   PD Engineering & Academy is led by Eng. Preemal Kumara, a
                   Project Manager with over 18 years of experience in local and
                   international markets. His expertise in HVAC systems,
@@ -139,10 +139,10 @@ const CompanyOverview = () => {
                 >
                   <Eye className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-[#0F172A] mb-4">
+                <h3 className="text-xl md:text-2xl font-bold text-[#1E293B] mb-2 md:mb-4">
                   Our Vision
                 </h3>
-                <p className="text-[#475569] text-base">
+                <p className="text-[#475569] text-sm md:text-base">
                   To become a leading engineering and technical education
                   provider recognized for quality, innovation, and excellence.
                 </p>
@@ -156,13 +156,13 @@ const CompanyOverview = () => {
                 >
                   <Rocket className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-[#0F172A] mb-4">
+                <h3 className="text-xl md:text-2xl font-bold text-[#0F172A] mb-2 md:mb-4">
                   Our Mission
                 </h3>
-                <p className="text-[#475569] text-base leading-relaxed mb-2">
+                <p className="text-[#475569] text-sm md:text-base leading-relaxed mb-2">
                   To provide:
                 </p>
-                <ul className="text-[#475569] text-base leading-relaxed space-y-1">
+                <ul className="text-[#475569] text-sm md:text-base leading-relaxed space-y-1">
                   <li>• Comfort in homes,</li>
                   <li>
                     • Controlled environmental conditions in offices for

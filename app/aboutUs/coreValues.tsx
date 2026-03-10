@@ -45,13 +45,13 @@ const CoreValues = () => {
         </div>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
           {values.map((value, index) => {
             const Icon = value.icon;
             return (
               <div
                 key={index}
-                className="rounded-2xl p-8 flex flex-col gap-6 bg-[#00070D]"
+                className="rounded-2xl p-8 flex flex-col gap-3 md:gap-6 bg-[#00070D]"
               >
                 <div className="w-14 h-14 rounded-xl flex items-center justify-center bg-[#137FEC1A]">
                   <Icon className="w-6 h-6 text-[#89CA29]" />
