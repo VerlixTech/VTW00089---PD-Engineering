@@ -1,4 +1,4 @@
-import { Header } from "@/components/header";
+
 import PageHero from "@/components/pageHero";
 import { Metadata } from "next";
 import CompanyOverview from "./companyOverview";
@@ -12,7 +12,6 @@ export const metadata: Metadata = {
 export default function AboutUsPage () {    
     return (
         <main className="min-h-screen ">
-            <Header />
             <PageHero 
                 title="About Us"
                 heading="PD Engineering & Academy "

@@ -1,6 +1,5 @@
 import AcademyAccordion from "@/components/academyAccordion";
 import Banner from "@/components/banner";
-import { Header } from "@/components/header";
 import PageHero from "@/components/pageHero";
 import WhoShouldAttend from "@/components/whoShouldAttend";
 import { Metadata } from "next";
@@ -14,7 +13,6 @@ export const metadata: Metadata = {
 export default function AcademyServicesPage() {
   return (
     <main className="min-h-screen ">
-        <Header />
         <PageHero 
             title="Academy"
             heading="delivering practical, industry-oriented HVAC design education"

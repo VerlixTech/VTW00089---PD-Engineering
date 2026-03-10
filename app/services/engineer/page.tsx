@@ -1,4 +1,3 @@
-import { Header } from "@/components/header";
 import PageHero from "@/components/pageHero";
 import CoreEngineeringServices from "./coreServices";
 import Banner from "@/components/banner";
@@ -11,7 +10,6 @@ export const metadata = {
 export default function EngineerServicesPage() {
   return (
     <main className="min-h-screen ">
-      <Header />
       <PageHero
         title="Engineering"
         heading="Redefining Engineering Excellence"

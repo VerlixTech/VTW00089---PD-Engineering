@@ -42,10 +42,17 @@ const OurServices = () => {
               {service.position === "bottom" && (
                 <>
                   <div className="relative w-full h-[404px] overflow-hidden">
-                    <Image src={service.image} alt={service.title} fill className="object-cover" />
+                    <Image
+                      src={service.image}
+                      alt={service.title}
+                      fill
+                      className="object-cover"
+                    />
                     <div className="absolute inset-0 bg-black/40"></div>
                     <div className="absolute bottom-[15%] left-0 right-0 flex items-end justify-center pb-4">
-                      <h3 className="text-white text-3xl font-semibold text-center px-4">{service.title}</h3>
+                      <h3 className="text-white text-3xl font-semibold text-center px-4">
+                        {service.title}
+                      </h3>
                     </div>
                   </div>
                   <div className="p-10 text-base text-black text-center bg-gradient-to-r from-[#5fa8d3] via-[#7bc76a] to-[#89CA29] h-[180px] flex items-center justify-center">
@@ -59,10 +66,17 @@ const OurServices = () => {
                     <p className="leading-relaxed">{service.description}</p>
                   </div>
                   <div className="relative w-full h-[404px] overflow-hidden">
-                    <Image src={service.image} alt={service.title} fill className="object-cover" />
+                    <Image
+                      src={service.image}
+                      alt={service.title}
+                      fill
+                      className="object-cover"
+                    />
                     <div className="absolute inset-0 bg-black/40"></div>
                     <div className="absolute top-[15%] left-0 right-0 flex items-start justify-center pt-4">
-                      <h3 className="text-white text-3xl font-semibold text-center px-4">{service.title}</h3>
+                      <h3 className="text-white text-3xl font-semibold text-center px-4">
+                        {service.title}
+                      </h3>
                     </div>
                   </div>
                 </>
@@ -74,12 +88,22 @@ const OurServices = () => {
         {/* Mobile Cards */}
         <div className="flex md:hidden flex-col gap-6 justify-center items-center">
           {services.map((service, index) => (
-            <div key={index} className="flex flex-col w-full max-w-[358px] px-auto">
+            <div
+              key={index}
+              className="flex flex-col w-full max-w-[358px] px-auto"
+            >
               <div className="relative w-full h-[220px] overflow-hidden">
-                <Image src={service.image} alt={service.title} fill className="object-cover" />
+                <Image
+                  src={service.image}
+                  alt={service.title}
+                  fill
+                  className="object-cover"
+                />
                 <div className="absolute inset-0 bg-black/40"></div>
                 <div className="absolute bottom-0 left-0 right-0 flex items-end justify-center pb-4">
-                  <h3 className="text-white text-xl font-bold text-center px-4">{service.title}</h3>
+                  <h3 className="text-white text-xl font-bold text-center px-4">
+                    {service.title}
+                  </h3>
                 </div>
               </div>
               <div className="p-6 text-sm text-black text-center bg-gradient-to-r from-[#5fa8d3] via-[#7bc76a] to-[#89CA29] flex items-center justify-center min-h-[110px]">
@@ -89,10 +113,11 @@ const OurServices = () => {
           ))}
         </div>
 
-        {/* View More Button */}
-        <button className="mt-14 border border-black px-10 py-3 hover:bg-black hover:text-white transition duration-300 text-sm uppercase tracking-wider">
-          View More
-        </button>
+        <div className="flex justify-center mt-4">
+          <div className="mt-14 border inline-block text-center border-black px-8 py-2 hover:bg-black hover:text-white transition duration-300 text-base font-semibold tracking-wider">
+            View More
+          </div>
+        </div>
       </div>
     </section>
   );

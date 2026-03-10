@@ -1,5 +1,4 @@
 import Banner from "@/components/banner";
-import { Header } from "@/components/header";
 import PageHero from "@/components/pageHero";
 import ProjectsGrid from "@/components/projectsGrid";
 import { Metadata } from "next";
@@ -12,7 +11,6 @@ export const metadata: Metadata = {
 export default function ProjectsPage() {
   return (
     <main className="min-h-screen ">
-        <Header />
         <PageHero
             title="Projects"
             heading="Our Projects Portfolio"
