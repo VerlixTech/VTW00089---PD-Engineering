@@ -61,7 +61,7 @@ const [isLoading, setIsLoading] = useState(false);
           <main className="grid md:grid-cols-2 gap-8">
             {/* Contact Form */}
             <div className="bg-white p-8 rounded-lg shadow-md">
-              <h2 className="text-2xl text-black font-bold mb-2">Let's Talk!</h2>
+              <h2 className="text-2xl text-black font-bold mb-2">Lets Talk!</h2>
               <p className="text-gray-600 mb-6">
                 Ready to discuss your industrial engineering needs? Contact us today for expert consultation.
               </p>

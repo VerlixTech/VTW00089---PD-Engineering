@@ -1,6 +1,6 @@
 import Banner from "@/components/banner";
 import PageHero from "@/components/pageHero";
-import ProjectsGrid from "@/components/projectsGrid";
+import ProjectsGrid from "@/app/projects/projectsGrid";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
