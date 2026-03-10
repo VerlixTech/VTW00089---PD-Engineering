@@ -1,5 +1,7 @@
+import Banner from "@/components/banner";
 import { Header } from "@/components/header";
 import PageHero from "@/components/pageHero";
+import ProjectsGrid from "@/components/projectsGrid";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -16,6 +18,14 @@ export default function ProjectsPage() {
             heading="Our Projects Portfolio"
             subHeading="Showing our international MEP, HAVC and specialized engineering achievements across Quatar, Sri Lanka and beyond."
         />
+
+        <ProjectsGrid />
+
+        <Banner
+        heading="Let's Build Something Great Together"
+        description="Reach out to our team today to discuss your project, explore solutions, 
+        and turn your ideas into reality with expert guidance and support."
+      />
     </main>
   );
 }
