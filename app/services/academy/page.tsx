@@ -4,6 +4,7 @@ import { Header } from "@/components/header";
 import PageHero from "@/components/pageHero";
 import WhoShouldAttend from "@/components/whoShouldAttend";
 import { Metadata } from "next";
+import AcademyHVACDesignRoom from "./academyHVACDesignRoom";
 
 export const metadata: Metadata = {
   title: "Academy Services - PD Engineering & Academy",
@@ -20,7 +21,7 @@ export default function AcademyServicesPage() {
             subHeading="PD Engineering & Academy is a professional training platform dedicated to developing practical, industry-ready HVAC engineers."
         />
 
-         {/* Accordion Section */}
+         <AcademyHVACDesignRoom/>
      
         <AcademyAccordion />
 

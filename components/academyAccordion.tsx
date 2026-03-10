@@ -94,30 +94,30 @@ export default function CoursesAccordion() {
     };
 
   return (
-    <section className="pt-20 max-md:pt-12 pb-10 px-6 bg-no-repeat bg-cover bg-center "
+    <section
+      className="pt-20 max-md:pt-12 pb-10 px-6 bg-no-repeat bg-cover bg-center "
       style={{
         background: "#0a0d12",
         backgroundImage: "url('/Servives_bg.svg')",
       }}
     >
-
-         
       <div className="max-w-6xl mx-auto">
         {/* Heading */}
-<h3
-                  className="text-3xl font-bold mb-4"
-                  style={{
-                    background: "linear-gradient(to right, #89CA29, #66C5FF)",
-                    WebkitBackgroundClip: "text",
-                    WebkitTextFillColor: "transparent",
-                    backgroundClip: "text",
-                  }}
-                >
-                   Courses &amp; Training Modules
-                </h3>
+        <h3
+          className="text-3xl font-bold mb-4"
+          style={{
+            background: "linear-gradient(to right, #89CA29, #66C5FF)",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent",
+            backgroundClip: "text",
+          }}
+        >
+          Courses &amp; Training Modules
+        </h3>
 
         <p className="text-[#CFCFCF] text-lg leading-relaxed mb-8">
-         Master modern industrial and residential HVAC engineering through our comprehensive modular training framework designed by industry experts.
+          Master modern industrial and residential HVAC engineering through our
+          comprehensive modular training framework designed by industry experts.
         </p>
 
         {/* Accordion */}
@@ -167,7 +167,10 @@ export default function CoursesAccordion() {
                         sx={{
                           color: "white",
                           fontWeight: 700,
-                          fontSize: "28px",
+                          fontSize: {
+                            xs: "20px",
+                            md: "28px", 
+                          },
                           lineHeight: 1.4,
                         }}
                       >
@@ -176,7 +179,10 @@ export default function CoursesAccordion() {
                       <Typography
                         sx={{
                           color: "#CECECE",
-                          fontSize: "20px",
+                          fontSize: {
+                            xs: "16px",
+                            md: "20px", 
+                          },
                           mt: 0.5,
                         }}
                       >
@@ -203,7 +209,10 @@ export default function CoursesAccordion() {
                   </p>
                   <ul className="space-y-1">
                     {item.bullets.map((bullet, i) => (
-                      <li key={i} className="flex items-start gap-2 text-gray-400 text-sm">
+                      <li
+                        key={i}
+                        className="flex items-start gap-2 text-gray-400 text-sm"
+                      >
                         <Check className="w-4 h-4 text-[#89CA29] mt-0.5 flex-shrink-0" />
                         {bullet}
                       </li>
