@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Header } from "@/components/header";
 import { HeroSlider } from "@/components/hero-slider";
 import { AboutUs } from "@/components/aboutus";
@@ -24,7 +23,11 @@ export default function Home() {
       <Partners />
       <News />
       <OurQualification />
-      <Banner />
+      <Banner
+        heading="Let's Build Something Great Together"
+        description="Reach out to our team today to discuss your project, explore solutions, 
+        and turn your ideas into reality with expert guidance and support."
+      />
     </main>
   );
 }

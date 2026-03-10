@@ -3,7 +3,7 @@
 const Partners = () => {
   return (
     <section
-      className=" max-md:pt-12 pb-10 mt-20 max-md:mt-12 px-6 bg-no-repeat bg-cover bg-center"
+      className=" max-md:pt-12 pb-10 md:mt-20  px-6 bg-no-repeat bg-cover bg-center"
       style={{ backgroundImage: "url('/bg-Net.svg')" }}
     >
       <div className="max-w-7xl mx-auto">
