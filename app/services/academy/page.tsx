@@ -1,4 +1,4 @@
-import AcademyAccordion from "@/components/academyAccordion";
+import AcademyAccordion from "@/app/services/academy/academyAccordion";
 import Banner from "@/components/banner";
 import PageHero from "@/components/pageHero";
 import WhoShouldAttend from "@/components/whoShouldAttend";

@@ -11,7 +11,7 @@ const PageHero = ({ title, heading, subHeading }: PageHeroProps) => {
   return (
     <section
       className="relative w-full flex items-center justify-center mt-20"
-      style={{ background: "#000", minHeight: "570px" }}
+      style={{ background: "#000", minHeight: "475px" }}
     >
       {/* background image */}
       <div
