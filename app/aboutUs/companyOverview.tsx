@@ -109,7 +109,7 @@ const CompanyOverview = () => {
             <div className="flex flex-col gap-3 h-full">
               <div className="relative w-full flex-1 overflow-hidden rounded-lg">
                 <Image
-                  src="/Gallery02.svg"
+                  src="/About02.svg"
                   alt="AboutUsImg02"
                   fill
                   className="object-cover"
@@ -117,7 +117,7 @@ const CompanyOverview = () => {
               </div>
               <div className="relative w-full flex-1 overflow-hidden rounded-lg">
                 <Image
-                  src="/Gallery04.svg"
+                  src="/About03.svg"
                   alt="AboutUsImg03"
                   fill
                   className="object-cover"
