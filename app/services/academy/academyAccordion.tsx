@@ -109,7 +109,7 @@ export default function CoursesAccordion() {
         </p>
 
         {/* Accordion */}
-        <div className="space-y-3">
+        <div className="space-y-3 p-2">
           {accordionData.map((item, index) => {
             const panel = `panel${index}`;
             const isExpanded = expanded === panel;
@@ -123,7 +123,7 @@ export default function CoursesAccordion() {
                 elevation={0}
                 sx={{
                   background: "transparent",
-                  borderRadius: "12px",
+                  borderRadius: "12px !important",
                   border: "1px solid #FFFFFF",
                   overflow: "hidden",
                   "&:before": { display: "none" },
@@ -133,66 +133,59 @@ export default function CoursesAccordion() {
                 <AccordionSummary
                   expandIcon={<ExpandMoreIcon sx={{ color: "white" }} />}
                   sx={{
-                    px: { xs: 2, sm: 3, md:0 },
-                    py: { xs: 1.5, sm: 2, md:0},
+                    px: 0,
+                    py: 0,
                     minHeight: "unset",
-                    "& .MuiAccordionSummary-content": { 
+                    "& .MuiAccordionSummary-content": {
                       margin: 0,
-                      flexDirection: { xs: "column", sm: "row" },
-                      alignItems: { xs: "stretch", sm: "center" },
-                      gap: { xs: 2, sm: 4 },
-                      width: "100%",
+                      alignItems: "center",
                     },
-                    "& .MuiAccordionSummary-expandIconWrapper": { 
-                      pr: { xs: 0, sm: 2 },
-                      alignSelf: { xs: "flex-end", sm: "center" },
-                      position: { xs: "absolute", sm: "relative" },
-                      right: { xs: 8, sm: 0 },
-                      top: {  sm: 0 },
+                    "& .MuiAccordionSummary-expandIconWrapper": {
+                      pr: {xs:1 , sm:2},
+                      flexShrink: 0,
                     },
                   }}
                 >
-                  {/* Image */}
-                  <div className="w-full sm:w-auto relative">
-                    <div className="relative w-full sm:w-[328px] h-[120px] sm:h-[150px] overflow-hidden rounded-lg sm:rounded-none">
+                  {/* Always horizontal: image left, text right */}
+                  <div className="flex flex-row items-center w-full">
+                    {/* Thumbnail */}
+                    <div
+                      className="relative flex-shrink-0"
+                      style={{ width: "clamp(100px, 25vw, 200px)", height: "clamp(65px, 16vw, 110px)" }}
+                    >
                       <Image
                         src={item.image}
                         alt={item.title}
                         fill
                         className="object-cover"
-                        sizes="(max-width: 640px) 100vw, 328px"
+                        sizes="(max-width: 640px) 100px, 200px"
                       />
                     </div>
-                  </div>
-                  
-                  <div className="w-full sm:w-auto pr-8 sm:pr-0">
-                    <Typography
-                      sx={{
-                        color: "white",
-                        fontWeight: 700,
-                        fontSize: {
-                          xs: "18px",
-                          sm: "20px",
-                          md: "28px",
-                        },
-                        lineHeight: 1.3,
-                      }}
-                    >
-                      {item.title}
-                    </Typography>
-                    <Typography
-                      sx={{
-                        color: "#CECECE",
-                        fontSize: {
-                          xs: "14px",
-                          sm: "16px",
-                          md: "20px",
-                        },
-                        mt: 0.5,
-                      }}
-                    >
-                      {item.lessons}
-                    </Typography>
+
+                    {/* Text */}
+                    <div className="flex flex-col justify-center md:px-3 pl-2 min-w-0">
+                      <Typography
+                        sx={{
+                          color: "white",
+                          fontWeight: 700,
+                          fontSize: { xs: "12px", sm: "18px", md: "28px" },
+                          lineHeight: 1.3,
+                          overflow: "hidden",
+                          textOverflow: "ellipsis",
+                        }}
+                      >
+                        {item.title}
+                      </Typography>
+                      <Typography
+                        sx={{
+                          color: "#CECECE",
+                          fontSize: { xs: "10px", sm: "14px", md: "20px" },
+                          mt: 0.5,
+                        }}
+                      >
+                        {item.lessons}
+                      </Typography>
+                    </div>
                   </div>
                 </AccordionSummary>
 
@@ -205,18 +198,15 @@ export default function CoursesAccordion() {
                     borderTop: "1px solid #2a2a2a",
                   }}
                 >
-                  <p className="text-gray-400 text-sm leading-relaxed mb-3">
+                  <p className="text-gray-400 text-xs md:text-sm  leading-relaxed mb-3">
                     {item.description}
                   </p>
-                  <p className="text-gray-300 text-sm font-semibold mb-2">
+                  <p className="text-gray-300 text-xs md:text-sm font-semibold mb-2">
                     {item.bulletTitle}
                   </p>
                   <ul className="space-y-2 sm:space-y-1">
                     {item.bullets.map((bullet, i) => (
-                      <li
-                        key={i}
-                        className="flex items-start gap-2 text-gray-400 text-sm"
-                      >
+                      <li key={i} className="flex items-start gap-2 text-gray-400 text-xs md:text-sm">
                         <Check className="w-4 h-4 text-[#89CA29] mt-0.5 flex-shrink-0" />
                         <span className="flex-1">{bullet}</span>
                       </li>
