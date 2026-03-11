@@ -1,3 +1,4 @@
+import PartnersMarquees from "./partnersMarquees";
 
 
 const Partners = () => {
@@ -21,8 +22,13 @@ const Partners = () => {
           </p>
         </div>
       </div>
+
+        {/* Marquees */}
+        <PartnersMarquees/>
     </section>
   );
 };
 
 export default Partners;
+
+
