@@ -55,6 +55,6 @@ export const newsData: NewsItem[] = [
       "PD Engineering successfully completed the full MEP fit-out for Sayura Beach Hotel, delivering high-efficiency chiller systems and industrial kitchen ventilation solutions tailored for coastal environments.",
     fullContent:
       "The project presented unique engineering challenges due to its proximity to the ocean, requiring corrosion-resistant materials and specialized installation techniques. Our team delivered the project ahead of schedule, and the hotel has since reported a 22% reduction in energy consumption compared to similar properties, a testament to our commitment to sustainable engineering.",
-    slug: "sayura-beach-hotel-completion",
+    slug: "sayura-beach-hotel-completion02",
   },
 ];

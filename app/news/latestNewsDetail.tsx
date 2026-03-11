@@ -16,8 +16,9 @@ const LatestNewsList = () => {
     );
   };
 
-  const visibleNews = newsData.slice(0, visibleCount);
-  const hasMore = visibleCount < newsData.length;
+  const latestNews = [...newsData].reverse();
+  const visibleNews = latestNews.slice(0, visibleCount);
+  const hasMore = visibleCount < latestNews.length;
 
   return (
     <section className="py-16 px-6">
@@ -28,7 +29,6 @@ const LatestNewsList = () => {
 
             return (
               <article key={news.slug}>
-                {/* Category & Date */}
                 <div className="flex items-center gap-2 mb-3">
                   <span className="text-[#195DE6] text-xs md:text-sm ">
                     {news.category}
@@ -37,12 +37,10 @@ const LatestNewsList = () => {
                   <span className="text-[#64748B] text-xs md:text-sm">{news.date}</span>
                 </div>
 
-                {/* Title */}
                 <h2 className="text-2xl md:text-5xl font-bold text-[#0F172A] max-w-3xl leading-tight mb-5">
                   {news.title}
                 </h2>
 
-                {/* Image with caption */}
                 <div className="relative w-full h-[200px] md:h-[375px] lg:h-[450px] overflow-hidden mb-4">
                   <Image
                     src={news.image}
@@ -57,12 +55,10 @@ const LatestNewsList = () => {
                   )}
                 </div>
 
-                {/* Excerpt */}
                 <p className="text-[#475569] text-sm md:text-base leading-relaxed mb-2">
                   {news.excerpt}
                 </p>
 
-                {/* Extra paragraph on expand */}
                 {isExpanded && (
                   <p className="text-[#475569] text-sm md:text-base leading-relaxed mb-2 mt-3">
                     {news.fullContent}
@@ -87,7 +83,7 @@ const LatestNewsList = () => {
         {hasMore && (
           <div className="flex justify-center mt-14">
             <button
-              onClick={() => setVisibleCount(newsData.length)}
+              onClick={() => setVisibleCount(latestNews.length)}
               className="border border-gray-900 px-8 py-2 text-sm font-medium hover:bg-gray-900 hover:text-white transition duration-300"
             >
               Load More Articles
