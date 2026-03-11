@@ -1,147 +1,168 @@
 'use client';
-import Head from "next/head";
-// import Lottie from "lottie-react";
+
 import React, { useState } from "react";
-// import { Clock, Mail, MapPin, Phone } from "lucide-react";
 import { sendContactForm } from "../lib/api";
 import { toast, ToastContainer } from 'react-toastify';
+import { ArrowRight } from "lucide-react";
 
 export function ContactSection() {
-    const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState({
     name: "",
+    company: "",
     email: "",
-    phone: "",
+    serviceType: "",
     message: "",
-  })
-const [isLoading, setIsLoading] = useState(false);
- const handleSubmit = async (e: React.FormEvent) => {
+  });
+
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setIsLoading(true); // Set loading state to true when submission starts
+    setIsLoading(true);
     try {
       const response = await sendContactForm(formData);
       if (response && response.success) {
-        setFormData({
-          name: '',
-          email: '',
-          phone: '',
-          message: '',
-        });
+        setFormData({ name: "", company: "", email: "", serviceType: "", message: "" });
       } else {
-        toast.error('There was an issue sending your message. Please try again later.');
+        toast.error("There was an issue sending your message. Please try again later.");
       }
     } catch (error) {
-      if(error){
-        toast.error('Error: Failed to send message. Please try again later.');
+      if (error) {
+        toast.error("Error: Failed to send message. Please try again later.");
       }
     } finally {
-      setIsLoading(false); // Set loading state to false when submission ends
+      setIsLoading(false);
     }
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+  ) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
+
+  const inputClass =
+    "w-full bg-transparent border-b border-gray-300 pb-2 text-gray-700 placeholder-[#D1D5DB] text-sm focus:outline-none focus:border-gray-600 transition duration-200";
+
+  const labelClass = "block text-sm font-semibold uppercase tracking-widest text-[#9CA3AF] mb-3";
+
   return (
-    <>
-      <Head>
-        <title>Contact Us </title>
-        <meta
-          name="description"
-          content="Get in touch with our team using our contact form, phone, email, or visit us at our location."
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      </Head>
+    <main className="bg-white font-sans">
+      <div className="max-w-6xl mx-auto px-6 py-20">
+        <div className="grid md:grid-cols-3 gap-16 items-start">
 
+          {/* Left — Heading */}
+          <div className="md:col-span-1">
+            <h2 className="text-4xl mb-4 leading-tight">
+              Send an Inquiry
+            </h2>
+            <p className="text-[#9CA3AF] text-lg leading-relaxed">
+              Tell us about your project or service requirement. Our specialized team will
+              respond within 24 hours.
+            </p>
+          </div>
 
-      <main className="bg-white font-inter">
-        <div className="container mx-auto px-4 mb-10 py-4 max-w-[90%]">
+          {/* Right — Form */}
+          <div className="md:col-span-2">
+            <form onSubmit={handleSubmit} className="space-y-10">
 
-
-          <main className="grid md:grid-cols-2 gap-8">
-            {/* Contact Form */}
-            <div className="bg-white p-8 rounded-lg shadow-md">
-              <h2 className="text-2xl text-black font-bold mb-2">Lets Talk!</h2>
-              <p className="text-gray-600 mb-6">
-                Ready to discuss your industrial engineering needs? Contact us today for expert consultation.
-              </p>
-
-              <form action="#" method="POST" className="space-y-6" onSubmit={handleSubmit}>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div>
-                    <label htmlFor="first-name" className="block text-sm font-medium text-gray-700 mb-1">First Name</label>
-                    <input
-                         id="name"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleChange}
-                      required
-                      placeholder="Your full name"
-                      type="text"
-   
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
-                    />
-                  </div>
-                  <div>
-<label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">Mobile Number</label>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div>
+                  <label className={labelClass}>Full Name</label>
                   <input
-                    id="phone"
-                      name="phone"
-                      type="tel"
-                      value={formData.phone}
-                      onChange={handleChange}
-                      placeholder="+94 XXX XXX XXX"
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+                    id="name"
+                    name="name"
+                    type="text"
+                    value={formData.name}
+                    onChange={handleChange}
+                    required
+                    placeholder="Your Name"
+                    className={inputClass}
                   />
-                  </div>
                 </div>
-
                 <div>
-                                      <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">Email</label>
-                    <input
-                           id="email"
-                      name="email"
-                      type="email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      required
-                      placeholder="your.email@example.com"
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
-                    />
-                  
+                  <label className={labelClass}>Company Name</label>
+                  <input
+                    id="company"
+                    name="company"
+                    type="text"
+                    value={formData.company}
+                    onChange={handleChange}
+                    placeholder="Organization"
+                    className={inputClass}
+                  />
                 </div>
+              </div>
 
+              {/* Row 2: Email + Service Type */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                 <div>
-                  
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">Message</label>
-                  <textarea
-                     id="message"
-                      name="message"
-                      value={formData.message}
-                      onChange={handleChange}
-                      rows={4}
-                      required
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
-                  ></textarea>
+                  <label className={labelClass}>Email Address</label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                    placeholder="name@company.com"
+                    className={inputClass}
+                  />
                 </div>
-
                 <div>
-                  <button
-                   disabled={isLoading} 
-                    type="submit"
-                    className="w-full md:w-auto text-center bg-[#000094] text-white font-bold py-3 px-8 rounded-md hover:bg-[#00005a] transition-colors cursor-pointer"
+                  <label className={labelClass}>Service Type</label>
+                  <select
+                    id="serviceType"
+                    name="serviceType"
+                    value={formData.serviceType}
+                    onChange={handleChange}
+                    className={`${inputClass} cursor-pointer`}
                   >
-                      {isLoading ? 'Sending...' : 'Send message'}
-                  </button>
+                    <option value="" disabled>Select a Service</option>
+                    <option value="a">A</option>
+                    <option value="b">B</option>
+                    <option value="c">C</option>
+                    <option value="d">D</option>
+                    <option value="e">E</option>
+                  </select>
                 </div>
-              </form>
-            </div>
+              </div>
 
-           
-          </main>
+              {/* Row 3: Message — full width */}
+              <div>
+                <label className={labelClass}>Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  required
+                  rows={4}
+                  placeholder="Briefly describe your requirements..."
+                  className={inputClass}
+                />
+              </div>
+
+
+              {/* Submit */}
+              <div className="flex justify-center">
+                <button
+                  type="submit"
+                  disabled={isLoading}
+                  className="flex items-center gap-3 bg-black text-white text-xs font-bold uppercase tracking-widest px-10 py-4 rounded-full hover:bg-gray-800 transition duration-300 disabled:opacity-60"
+                >
+                  {isLoading ? "Sending..." : "Submit Message"}
+                  {!isLoading && <ArrowRight className="w-4 h-4" />}
+                </button>
+              </div>
+
+            </form>
+          </div>
+
         </div>
-              <ToastContainer />
-      </main>
-    </>
+      </div>
+      <ToastContainer />
+    </main>
   );
 }

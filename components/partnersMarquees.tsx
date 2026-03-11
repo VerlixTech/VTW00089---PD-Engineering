@@ -32,13 +32,13 @@ export default function PartnersMarquees() {
         {/* Desktop View - Horizontal Marquees */}
         <div className="hidden md:block space-y-2">
           {/* First Bar - Left to Right */}
-          <div className="relative w-full overflow-hidden rounded-lg bg-muted/30 py-2">
+          <div className="relative w-full overflow-hidden rounded-lg border-[#9C9C9C] bg-muted/30 py-2">
             <div className="flex w-max animate-marquee-left will-change-transform">
               <div className="flex gap-2 pr-2">
                 {allLogos.map((logo, idx) => (
                   <div
                     key={idx}
-                    className="flex items-center justify-center w-48 h-28 bg-muted border border-border rounded-lg hover:border-accent transition-colors duration-300 flex-shrink-0 p-4"
+                    className="flex items-center justify-center w-60 h-28 bg-muted border border-border border-2 rounded-lg border-[#9C9C9C] hover:border-accent transition-colors duration-300 flex-shrink-0 p-4"
                   >
                     <Image 
                       src={logo.image} 
@@ -55,7 +55,7 @@ export default function PartnersMarquees() {
                 {allLogos.map((logo, idx) => (
                   <div
                     key={`duplicate-${idx}`}
-                    className="flex items-center justify-center w-48 h-28 bg-muted border border-border rounded-lg hover:border-accent transition-colors duration-300 flex-shrink-0 p-4"
+                    className="flex items-center justify-center w-60 h-28 bg-muted border border-border border-2 rounded-lg border-[#9C9C9C] hover:border-accent transition-colors duration-300 flex-shrink-0 p-4"
                   >
                     <Image 
                       src={logo.image} 
@@ -71,13 +71,13 @@ export default function PartnersMarquees() {
           </div>
 
           {/* Second Bar - Right to Left */}
-          <div className="relative w-full overflow-hidden rounded-lg bg-muted/30 py-2">
+          <div className="relative w-full overflow-hidden rounded-lg border-[#9C9C9C] bg-muted/30 py-2">
             <div className="flex w-max animate-marquee-right will-change-transform">
               <div className="flex gap-2 pr-2">
                 {allLogos.map((logo, idx) => (
                   <div
                     key={idx}
-                    className="flex items-center justify-center w-48 h-28 bg-muted border border-border rounded-lg hover:border-accent transition-colors duration-300 flex-shrink-0 p-4"
+                    className="flex items-center justify-center w-60 h-28 bg-muted border border-border border-2 rounded-lg border-[#9C9C9C] hover:border-accent transition-colors duration-300 flex-shrink-0 p-4"
                   >
                     <Image 
                       src={logo.image} 
@@ -93,7 +93,7 @@ export default function PartnersMarquees() {
                 {allLogos.map((logo, idx) => (
                   <div
                     key={`duplicate-${idx}`}
-                    className="flex items-center justify-center w-48 h-28 bg-muted border border-border rounded-lg hover:border-accent transition-colors duration-300 flex-shrink-0 p-4"
+                    className="flex items-center justify-center w-60 h-28 bg-muted border border-border border-2 rounded-lg border-[#9C9C9C] hover:border-accent transition-colors duration-300 flex-shrink-0 p-4"
                   >
                     <Image 
                       src={logo.image} 
@@ -113,13 +113,13 @@ export default function PartnersMarquees() {
         <div className="md:hidden flex gap-4">
           {/* First Bar - Top to Bottom */}
           <div className="flex-1">
-            <div className="relative h-96 w-full overflow-hidden rounded-lg bg-muted/30">
+            <div className="relative h-96 w-full overflow-hidden rounded-lg border-[#9C9C9C] bg-muted/30">
               <div className="flex flex-col h-max animate-marquee-vertical will-change-transform">
                 <div className="flex flex-col gap-4 pb-4">
                   {allLogos.map((logo, idx) => (
                     <div
                       key={idx}
-                      className="flex items-center justify-center w-full h-20 bg-muted border border-border rounded-lg hover:border-accent transition-colors duration-300 flex-shrink-0 p-2"
+                      className="flex items-center justify-center w-full h-20 bg-muted border border-border rounded-lg border-[#9C9C9C] hover:border-accent transition-colors duration-300 flex-shrink-0 p-2"
                     >
                       <Image 
                         src={logo.image} 
@@ -135,7 +135,7 @@ export default function PartnersMarquees() {
                   {allLogos.map((logo, idx) => (
                     <div
                       key={`duplicate-${idx}`}
-                      className="flex items-center justify-center w-full h-20 bg-muted border border-border rounded-lg hover:border-accent transition-colors duration-300 flex-shrink-0 p-2"
+                      className="flex items-center justify-center w-full h-20 bg-muted border border-border rounded-lg border-[#9C9C9C] hover:border-accent transition-colors duration-300 flex-shrink-0 p-2"
                     >
                       <Image 
                         src={logo.image} 
@@ -153,13 +153,13 @@ export default function PartnersMarquees() {
 
           {/* Second Bar - Bottom to Top */}
           <div className="flex-1">
-            <div className="relative h-96 w-full overflow-hidden rounded-lg bg-muted/30">
+            <div className="relative h-96 w-full overflow-hidden rounded-lg border-[#9C9C9C] bg-muted/30">
               <div className="flex flex-col h-max animate-marquee-vertical-reverse will-change-transform">
                 <div className="flex flex-col gap-4 pb-4">
                   {allLogos.map((logo, idx) => (
                     <div
                       key={idx}
-                      className="flex items-center justify-center w-full h-20 bg-muted border border-border rounded-lg hover:border-accent transition-colors duration-300 flex-shrink-0 p-2"
+                      className="flex items-center justify-center w-full h-20 bg-muted border border-border rounded-lg border-[#9C9C9C] hover:border-accent transition-colors duration-300 flex-shrink-0 p-2"
                     >
                       <Image 
                         src={logo.image} 
@@ -175,7 +175,7 @@ export default function PartnersMarquees() {
                   {allLogos.map((logo, idx) => (
                     <div
                       key={`duplicate-${idx}`}
-                      className="flex items-center justify-center w-full h-20 bg-muted border border-border rounded-lg hover:border-accent transition-colors duration-300 flex-shrink-0 p-2"
+                      className="flex items-center justify-center w-full h-20 bg-muted border border-border rounded-lg border-[#9C9C9C] hover:border-accent transition-colors duration-300 flex-shrink-0 p-2"
                     >
                       <Image 
                         src={logo.image} 
