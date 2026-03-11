@@ -13,7 +13,7 @@ export const newsData: NewsItem[] = [
   {
     category: "Company Updates",
     date: "October 24, 2023",
-    title: "PD Engineering & Academy Expands Operations in Qatar",
+    title: "PD Engineering & Academy Expands Operations in Qatar-01",
     image: "/News01.svg",
     imageCaption: "PROJECT: DOHA TOWER PHASE II",
     excerpt:
@@ -25,7 +25,7 @@ export const newsData: NewsItem[] = [
   {
     category: "Training Programs",
     date: "November 10, 2023",
-    title: "New HVAC Training Module Launched for 2024",
+    title: "PD Engineering & Academy Expands Operations in Qatar-02",
     image: "/News01.svg",
     excerpt:
       "PD Academy introduces a new modular HVAC training framework designed by industry experts to meet the growing demand for certified HVAC professionals across the region.",
@@ -36,7 +36,19 @@ export const newsData: NewsItem[] = [
   {
     category: "Projects",
     date: "December 5, 2023",
-    title: "Successful Completion of Sayura Beach Hotel MEP Works",
+    title: "PD Engineering & Academy Expands Operations in Qatar-03",
+    image: "/News01.svg",
+    imageCaption: "PROJECT: SAYURA BEACH HOTEL",
+    excerpt:
+      "PD Engineering successfully completed the full MEP fit-out for Sayura Beach Hotel, delivering high-efficiency chiller systems and industrial kitchen ventilation solutions tailored for coastal environments.",
+    fullContent:
+      "The project presented unique engineering challenges due to its proximity to the ocean, requiring corrosion-resistant materials and specialized installation techniques. Our team delivered the project ahead of schedule, and the hotel has since reported a 22% reduction in energy consumption compared to similar properties, a testament to our commitment to sustainable engineering.",
+    slug: "sayura-beach-hotel-completion",
+  },
+  {
+    category: "Projects",
+    date: "December 5, 2023",
+    title: "PD Engineering & Academy Expands Operations in Qatar-04",
     image: "/News01.svg",
     imageCaption: "PROJECT: SAYURA BEACH HOTEL",
     excerpt:
