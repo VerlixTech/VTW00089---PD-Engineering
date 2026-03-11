@@ -21,10 +21,6 @@ const accordionData = [
       "Equipment selection: Package Units, Pumps, Cooling Towers",
       "Pipe sizing (manual and software-based)",
       "Valve arrangements and system configuration",
-      "Cooling tower make-up water calculation",
-      "Pump head calculation for open-loop condenser water circuits",
-      "Electrical wiring selection, control philosophy, and starting panels",
-      "Sample drawings, design examples, and tender preparation",
     ],
   },
   {
@@ -37,8 +33,6 @@ const accordionData = [
     bullets: [
       "Chiller types and selection criteria",
       "Chilled water piping design and layout",
-      "Cooling coil selection and performance",
-      "System balancing and commissioning",
     ],
   },
   {
@@ -52,7 +46,6 @@ const accordionData = [
       "Duct sizing methods (equal friction, velocity reduction)",
       "Air distribution devices: grilles, diffusers, registers",
       "Fresh air and exhaust system design",
-      "Fan selection and performance curves",
     ],
   },
   {
@@ -65,8 +58,6 @@ const accordionData = [
     bullets: [
       "Cooling load components (solar, internal, ventilation)",
       "Manual heat load calculation methods",
-      "Software tools for load estimation",
-      "Psychrometric analysis",
     ],
   },
   {
@@ -79,8 +70,6 @@ const accordionData = [
     bullets: [
       "Data center cooling strategies",
       "Clean room and hospital HVAC requirements",
-      "Industrial ventilation design",
-      "Energy recovery systems",
     ],
   },
 ];
@@ -95,16 +84,15 @@ export default function CoursesAccordion() {
 
   return (
     <section
-      className="pt-20 max-md:pt-12 pb-10 px-6 bg-no-repeat bg-cover bg-center "
+      className="pt-20 max-md:pt-12 pb-10 px-4 sm:px-6 bg-no-repeat bg-cover bg-center"
       style={{
         background: "#0a0d12",
         backgroundImage: "url('/Servives_bg.svg')",
       }}
     >
-      <div className="max-w-6xl mx-auto">
-        {/* Heading */}
+      <div className="max-w-6xl mx-auto px-2">
         <h3
-          className="text-3xl font-bold mb-4"
+          className="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4"
           style={{
             background: "linear-gradient(to right, #89CA29, #66C5FF)",
             WebkitBackgroundClip: "text",
@@ -115,7 +103,7 @@ export default function CoursesAccordion() {
           Courses &amp; Training Modules
         </h3>
 
-        <p className="text-[#CFCFCF] text-lg leading-relaxed mb-8">
+        <p className="text-[#CFCFCF] text-base sm:text-lg leading-relaxed mb-6 sm:mb-8">
           Master modern industrial and residential HVAC engineering through our
           comprehensive modular training framework designed by industry experts.
         </p>
@@ -135,68 +123,84 @@ export default function CoursesAccordion() {
                 elevation={0}
                 sx={{
                   background: "transparent",
-                  borderRadius: "12px !important",
+                  borderRadius: "12px",
                   border: "1px solid #FFFFFF",
                   overflow: "hidden",
                   "&:before": { display: "none" },
-                  "&.Mui-expanded": { margin: 0 },
+                  "&.Mui-expanded": { marginBottom: 2 },
                 }}
               >
                 <AccordionSummary
                   expandIcon={<ExpandMoreIcon sx={{ color: "white" }} />}
                   sx={{
-                    px: 0,
-                    py: 0,
+                    px: { xs: 2, sm: 3, md:0 },
+                    py: { xs: 1.5, sm: 2, md:0},
                     minHeight: "unset",
-                    "& .MuiAccordionSummary-content": { margin: 0 },
-                    "& .MuiAccordionSummary-expandIconWrapper": { pr: 2 },
+                    "& .MuiAccordionSummary-content": { 
+                      margin: 0,
+                      flexDirection: { xs: "column", sm: "row" },
+                      alignItems: { xs: "stretch", sm: "center" },
+                      gap: { xs: 2, sm: 4 },
+                      width: "100%",
+                    },
+                    "& .MuiAccordionSummary-expandIconWrapper": { 
+                      pr: { xs: 0, sm: 2 },
+                      alignSelf: { xs: "flex-end", sm: "center" },
+                      position: { xs: "absolute", sm: "relative" },
+                      right: { xs: 8, sm: 0 },
+                      top: {  sm: 0 },
+                    },
                   }}
                 >
-                  <div className="flex items-center gap-4 w-full ">
-                    {/* Image */}
-                    <Image
-                      src={item.image}
-                      alt={item.title}
-                      width={144}
-                      height={80}
-                      className="w-[328px] h-[150px] object-cover flex-shrink-0 mr-[5%]"
-                    />
-                    {/* Title & lessons */}
-                    <div>
-                      <Typography
-                        sx={{
-                          color: "white",
-                          fontWeight: 700,
-                          fontSize: {
-                            xs: "20px",
-                            md: "28px", 
-                          },
-                          lineHeight: 1.4,
-                        }}
-                      >
-                        {item.title}
-                      </Typography>
-                      <Typography
-                        sx={{
-                          color: "#CECECE",
-                          fontSize: {
-                            xs: "16px",
-                            md: "20px", 
-                          },
-                          mt: 0.5,
-                        }}
-                      >
-                        {item.lessons}
-                      </Typography>
+                  {/* Image */}
+                  <div className="w-full sm:w-auto relative">
+                    <div className="relative w-full sm:w-[328px] h-[120px] sm:h-[150px] overflow-hidden rounded-lg sm:rounded-none">
+                      <Image
+                        src={item.image}
+                        alt={item.title}
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 640px) 100vw, 328px"
+                      />
                     </div>
+                  </div>
+                  
+                  <div className="w-full sm:w-auto pr-8 sm:pr-0">
+                    <Typography
+                      sx={{
+                        color: "white",
+                        fontWeight: 700,
+                        fontSize: {
+                          xs: "18px",
+                          sm: "20px",
+                          md: "28px",
+                        },
+                        lineHeight: 1.3,
+                      }}
+                    >
+                      {item.title}
+                    </Typography>
+                    <Typography
+                      sx={{
+                        color: "#CECECE",
+                        fontSize: {
+                          xs: "14px",
+                          sm: "16px",
+                          md: "20px",
+                        },
+                        mt: 0.5,
+                      }}
+                    >
+                      {item.lessons}
+                    </Typography>
                   </div>
                 </AccordionSummary>
 
                 <AccordionDetails
                   sx={{
                     background: "transparent",
-                    px: 3,
-                    pb: 3,
+                    px: { xs: 2, sm: 3 },
+                    pb: { xs: 2, sm: 3 },
                     pt: 2,
                     borderTop: "1px solid #2a2a2a",
                   }}
@@ -207,14 +211,14 @@ export default function CoursesAccordion() {
                   <p className="text-gray-300 text-sm font-semibold mb-2">
                     {item.bulletTitle}
                   </p>
-                  <ul className="space-y-1">
+                  <ul className="space-y-2 sm:space-y-1">
                     {item.bullets.map((bullet, i) => (
                       <li
                         key={i}
                         className="flex items-start gap-2 text-gray-400 text-sm"
                       >
                         <Check className="w-4 h-4 text-[#89CA29] mt-0.5 flex-shrink-0" />
-                        {bullet}
+                        <span className="flex-1">{bullet}</span>
                       </li>
                     ))}
                   </ul>

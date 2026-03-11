@@ -12,7 +12,7 @@ const ProjectsGrid = () => {
               key={index}
               className="flex flex-col sm:flex-row bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-300"
             >
-              {/* Image - Full width on mobile, fixed on desktop */}
+              {/* Image */}
               <div className="relative w-full sm:w-[200px] md:w-[220px] lg:w-[230px] h-[200px] sm:h-[280px] md:h-[300px] lg:h-[325px] flex-shrink-0">
                 <Image
                   src={project.image}
