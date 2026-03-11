@@ -1,8 +1,8 @@
 'use client';
 import Head from "next/head";
-import Lottie from "lottie-react";
+// import Lottie from "lottie-react";
 import React, { useState } from "react";
-import { Clock, Mail, MapPin, Phone } from "lucide-react";
+// import { Clock, Mail, MapPin, Phone } from "lucide-react";
 import { sendContactForm } from "../lib/api";
 import { toast, ToastContainer } from 'react-toastify';
 
