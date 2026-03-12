@@ -61,7 +61,7 @@ const OurServices = () => {
                       </h3>
                     </div>
                   </div>
-                  <div className="p-8 text-base text-black text-center bg-gradient-to-r from-[#5fa8d3] via-[#7bc76a] to-[#89CA29] min-h-[200px] flex items-center justify-center">
+                  <div className="p-8 text-base text-black text-center bg-gradient-to-r from-[#5fa8d3] via-[#7bc76a] to-[#89CA29] h-[180px] flex items-center justify-center">
                     <p className="leading-relaxed">{service.description}</p>
                   </div>
                 </>
@@ -69,7 +69,7 @@ const OurServices = () => {
 
               {service.position === "top" && (
                 <>
-                  <div className="p-8 text-base text-black text-center bg-gradient-to-r from-[#5fa8d3] via-[#7bc76a] to-[#89CA29] min-h-[200px] flex items-center justify-center">
+                  <div className="p-8 text-base text-black text-center bg-gradient-to-r from-[#5fa8d3] via-[#7bc76a] to-[#89CA29] h-[180px] flex items-center justify-center">
                     <p className="leading-relaxed">{service.description}</p>
                   </div>
                   <div className="relative w-full h-[404px] overflow-hidden group">
@@ -119,7 +119,7 @@ const OurServices = () => {
                   </h3>
                 </div>
               </div>
-              <div className="p-6 text-sm text-black text-center bg-gradient-to-r from-[#5fa8d3] via-[#7bc76a] to-[#89CA29] min-h-[120px] flex items-center justify-center">
+              <div className="p-6 text-sm text-black text-center bg-gradient-to-r from-[#5fa8d3] via-[#7bc76a] to-[#89CA29] min-h-[110px] flex items-center justify-center">
                 <p className="leading-relaxed">{service.description}</p>
               </div>
 
