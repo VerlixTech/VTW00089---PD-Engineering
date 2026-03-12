@@ -17,7 +17,7 @@ export function AboutUs() {
         <div>
           <h4 className="text-lg md:text-[36px] mb-2">About</h4>
           <h4 className="text-2xl md:text-[40px] font-semibold mb-4">
-            PD Engineering & Academy
+            PD Engineering <br className="max-md:hidden"/>& Academy
           </h4>
 
           <p className="lg:text-lg text-base text-gray-300 leading-relaxed ">

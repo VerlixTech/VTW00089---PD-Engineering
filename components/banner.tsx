@@ -9,7 +9,7 @@ const Banner = ({ heading, description }: BannerProps) => {
       <div
         className="max-w-7xl mx-auto rounded-2xl px-12 py-12 flex flex-col md:flex-row items-center justify-between gap-8"
         style={{
-          backgroundImage: `linear-gradient(135deg, rgba(26,26,46,0.92) 0%, rgba(22,33,62,0.92) 50%, rgba(26,42,26,0.92) 100%), url('/successProject02.svg')`,
+          backgroundImage: `linear-gradient(90deg, #00080D 0%, #0043738A 73%, #00000033 100%), url('/successProject02.svg')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -19,7 +19,7 @@ const Banner = ({ heading, description }: BannerProps) => {
           <h2 className="text-white text-3xl md:text-4xl font-bold mb-4 leading-tight">
             {heading}
           </h2>
-          <p className="text-gray-400 text-sm md:text-base leading-relaxed">
+          <p className="text-gray-400 text-sm md:text-baseleading-relaxed">
             {description}
           </p>
         </div>

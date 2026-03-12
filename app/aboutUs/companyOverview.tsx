@@ -185,7 +185,7 @@ const CompanyOverview = () => {
             <div
               className="rounded-2xl px-10 py-12 flex flex-col md:flex-row gap-10 items-center"
               style={{
-                backgroundImage: `linear-gradient(135deg, rgba(26,26,46,0.92) 0%, rgba(22,33,62,0.92) 50%, rgba(26,42,26,0.92) 100%), url('/successProject02.svg')`,
+                backgroundImage: `linear-gradient(90deg, #00080D 0%, #0043738A 73%, #00000033 100%), url('/successProject02.svg')`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
