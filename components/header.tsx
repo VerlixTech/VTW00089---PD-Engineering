@@ -9,13 +9,18 @@ export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [mobileServiceOpen, setMobileServiceOpen] = useState(false);
 
+  const closeMobileMenu = () => {
+    setMobileOpen(false);
+    setMobileServiceOpen(false); 
+  };
+
   return (
     <header className="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-black ">
       <div className="max-w-7xl mx-auto px-6 lg:px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
 
-          <Link href="/" className="flex items-center gap-2">
+          <Link href="/" className="flex items-center gap-2" onClick={closeMobileMenu}>
             <Image src="/logo.svg" alt="PD Engineering" width={50} height={50} />
           </Link>
 
@@ -72,7 +77,6 @@ export function Header() {
           </div>
 
           {/* Mobile Menu Button */}
-
           <button
             className="lg:hidden text-white"
             onClick={() => setMobileOpen(!mobileOpen)}
@@ -87,11 +91,19 @@ export function Header() {
       {mobileOpen && (
         <div className="lg:hidden bg-black border-t border-white/10">
           <div className="flex flex-col px-6 py-6 gap-4 text-white">
-            <Link href="/" className="hover:text-[#89CA29]">
+            <Link 
+              href="/" 
+              className="hover:text-[#89CA29]"
+              onClick={closeMobileMenu}
+            >
               Home
             </Link>
 
-            <Link href="/aboutUs" className="hover:text-[#89CA29]">
+            <Link 
+              href="/aboutUs" 
+              className="hover:text-[#89CA29]"
+              onClick={closeMobileMenu}
+            >
               About Us
             </Link>
 
@@ -107,27 +119,44 @@ export function Header() {
 
             {mobileServiceOpen && (
               <div className="pl-4 flex flex-col gap-2 text-sm">
-                <Link href="/services/engineer" className="hover:text-[#89CA29]">
+                <Link 
+                  href="/services/engineer" 
+                  className="hover:text-[#89CA29]"
+                  onClick={closeMobileMenu}
+                >
                   Engineer
                 </Link>
 
-                <Link href="/services/academy" className="hover:text-[#89CA29]">
+                <Link 
+                  href="/services/academy" 
+                  className="hover:text-[#89CA29]"
+                  onClick={closeMobileMenu}
+                >
                   Academy
                 </Link>
               </div>
             )}
 
-            <Link href="/projects" className="hover:text-[#89CA29]">
+            <Link 
+              href="/projects" 
+              className="hover:text-[#89CA29]"
+              onClick={closeMobileMenu}
+            >
               Projects
             </Link>
 
-            <Link href="/news" className="hover:text-[#89CA29]">
+            <Link 
+              href="/news" 
+              className="hover:text-[#89CA29]"
+              onClick={closeMobileMenu}
+            >
               News & Events
             </Link>
 
             <Link
               href="/contact"
               className="mt-4 text-center py-2 rounded-full bg-gradient-to-r from-blue-500 to-[#89CA29]"
+              onClick={closeMobileMenu}
             >
               Contact Us
             </Link>
