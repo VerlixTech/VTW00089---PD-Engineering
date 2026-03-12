@@ -17,18 +17,12 @@ const CertificatePopUp = ({ certificates, onClose }: Props) => {
   };
 
   const prevCertificate = () => {
-    setCurrent((prev) =>
-      prev === 0 ? certificates.length - 1 : prev - 1
-    );
+    setCurrent((prev) => (prev === 0 ? certificates.length - 1 : prev - 1));
   };
 
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-black/70 z-50 px-4">
-
-      {/* Popup container */}
-        <div className="relative bg-white/70 backdrop-blur-[2px] rounded-xl p-4 sm:p-6 w-full max-w-4xl">
-
-        {/* Close button */}
+      <div className="relative bg-white/70 backdrop-blur-[2px] rounded-xl p-4 sm:p-6 w-full max-w-4xl">
         <button
           onClick={onClose}
           className="absolute top-3 right-3 text-gray-600 hover:text-black"
@@ -38,8 +32,6 @@ const CertificatePopUp = ({ certificates, onClose }: Props) => {
 
         {/* Certificate image */}
         <div className="flex items-center justify-center gap-2 sm:gap-4">
-
-          {/* Left Arrow */}
           {certificates.length > 1 && (
             <button
               onClick={prevCertificate}
@@ -58,7 +50,6 @@ const CertificatePopUp = ({ certificates, onClose }: Props) => {
             />
           </div>
 
-          {/* Right Arrow */}
           {certificates.length > 1 && (
             <button
               onClick={nextCertificate}
@@ -67,9 +58,7 @@ const CertificatePopUp = ({ certificates, onClose }: Props) => {
               <ChevronRight size={28} />
             </button>
           )}
-
         </div>
-
       </div>
     </div>
   );

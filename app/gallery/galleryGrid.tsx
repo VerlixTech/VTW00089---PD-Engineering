@@ -151,12 +151,6 @@ const GalleryGrid = () => {
       }}
     >
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-4xl md:text-5xl font-bold mb-4">Gallery</h2>
-        <p className="text-gray-600 max-w-2xl mx-auto mb-12 lg:text-lg text-base">
-          Explore our portfolio showcasing completed projects, installations,
-          and hands-on training sessions.
-        </p>
-
         {/* Render visible grids */}
         <div className="space-y-6">
           {Array.from({ length: visibleGrids }).map((_, index) =>

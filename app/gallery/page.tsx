@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import GalleryGrid from "./galleryGrid";
 
 export const metadata: Metadata = {
-    title: "Gallery",
+    title: "Gallery - PD Engineering & Academy",
     description: "Explore our gallery of projects and achievements."
 };
 
