@@ -5,7 +5,7 @@ interface BannerProps {
 
 const Banner = ({ heading, description }: BannerProps) => {
   return (
-    <section className="px-6 py-2 md:py-12 ">
+    <section className="px-6 pt-8 pb-16">
       <div
         className="max-w-7xl mx-auto rounded-2xl px-12 py-12 flex flex-col md:flex-row items-center justify-between gap-8"
         style={{
@@ -17,18 +17,13 @@ const Banner = ({ heading, description }: BannerProps) => {
         {/* Left Content */}
         <div className="flex-1 max-w-lg">
           <h2 className="text-white text-3xl md:text-4xl font-bold mb-4 leading-tight">
-            {/* Let&apos;s Build Something <br /> Great Together */}
             {heading}
           </h2>
           <p className="text-gray-400 text-sm leading-relaxed">
             {description}
-            {/* Let&apos;s build something great together! Reach out to our team today
-            to discuss your project, explore solutions, and turn your ideas into
-            reality with expert guidance and support. */}
           </p>
         </div>
-
-        {/* Right - Contact Us Button */}
+          {/* Right Content */}
         <div className="flex-shrink-0">
           <button
             className="px-10 py-3 rounded-full text-white font-medium text-sm transition duration-300 hover:opacity-90"

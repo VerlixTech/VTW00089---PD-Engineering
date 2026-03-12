@@ -21,11 +21,9 @@ const Footer = () => {
     <div className="absolute top-0 left-0 w-full h-[2vh] bg-gradient-to-r from-[#66C5FF] to-[#89CA29] z-10"></div>
     
     <footer style={{ background: "#0a0a0a" }} className="text-white">
-      {/* Main Footer */}
       <div className="max-w-7xl mx-auto px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
 
-          {/* Left — Brand */}
           <div className="max-w-xs">
             <div className="flex items-center gap-3 mb-6">
               <Image
@@ -44,7 +42,6 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Middle — Capabilities */}
           <div>
             <h4 className="text-xs font-semibold uppercase tracking-widest text-white mb-6">
               Capabilities
@@ -62,7 +59,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Right — Company */}
           <div>
             <h4 className="text-xs font-semibold uppercase tracking-widest text-white mb-6">
               Company
@@ -84,7 +80,6 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Divider */}
       <div className="border-t border-gray-800" />
 
       <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row items-center justify-between gap-4 text-gray-500 text-sm">

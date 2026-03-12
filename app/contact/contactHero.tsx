@@ -36,7 +36,7 @@ const ContactHero = () => {
           Contact Details
         </h1>
 
-        <div className="flex flex-col md:flex-row justify-between text-left gap-10 px-2">
+        <div className="flex flex-col md:flex-row justify-between max:md:text-center gap-10 px-2">
           <div>
             <p className="text-[#9CA3AF] text-[10px] uppercase tracking-widest mb-3">
               Our Headquarters
