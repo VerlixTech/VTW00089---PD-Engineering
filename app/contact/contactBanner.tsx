@@ -12,11 +12,11 @@ const ContactBanner = () => {
         }}
       >
 
-        <h2 className="text-white text-4xl md:text-7xl font-semibold leading-tight">
+        <h2 className="text-white text-3xl md:text-5xl font-semibold leading-tight">
           Let&apos;s Connect.
         </h2>
 
-        <p className="text-[#9CA3AF] text-sm md:text-xl leading-relaxed max-w-lg">
+        <p className="text-[#9CA3AF] text-sm md:text-lg leading-relaxed max-w-lg">
           Follow our journey and stay updated with the latest in engineering innovation and
 corporate milestones.
         </p>

@@ -1,4 +1,4 @@
-import { ShieldCheck, Bot, Lightbulb } from "lucide-react";
+import { ShieldCheck, Bot, Lightbulb, BadgeCheck } from "lucide-react";
 
 const values = [
   {
@@ -27,11 +27,12 @@ const CoreValues = () => {
         <div className="grid md:grid-cols-2 gap-8 items-center mb-14">
           <div>
             <div className="inline-flex items-center gap-2 border border-gray-300 rounded-full bg-gray-100 px-4 py-1 mb-5 w-fit font-semibold">
+              <BadgeCheck className="w-4 h-4 text-[#3B82F6]" />
               <span className="text-[#3B82F6] text-xs uppercase tracking-widest">
                 core values
               </span>
             </div>
-            <h2 className="text-4xl md:text-[40px] font-bold text-gray-900 leading-tight">
+            <h2 className="text-2xl md:text-[40px] font-bold text-gray-900 leading-tight">
               Delivering excellence <br /> through innovation and <br />{" "}
               reliable engineering.
             </h2>

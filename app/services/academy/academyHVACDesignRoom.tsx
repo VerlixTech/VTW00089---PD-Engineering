@@ -13,8 +13,8 @@ const AcademyHVACDesignRoom = () => {
           {/* left */}
           <div>
             <p className=" text-4xl mb-1 ">About</p>
-            <h2 className="text-4xl font-bold leading-tight mb-8">
-              HAVC <br /> Design Room
+            <h2 className="text-2xl md:text-[40px] font-bold leading-tight mb-8">
+              HAVC <br className="max-md:hidden" /> Design Room
             </h2>
             <div className="space-y-5  text-base md:text-lg leading-relaxed">
               <p>

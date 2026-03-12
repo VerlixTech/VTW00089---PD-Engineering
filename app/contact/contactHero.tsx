@@ -12,14 +12,14 @@ const ContactHero = () => {
           backgroundImage: "url('/bg-Net.svg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
-          opacity: 0.15,
+          opacity: 0.08,
         }}
       />
 
       <div className="relative z-10 text-center px-6 w-full max-w-6xl mx-auto">
         <div className="inline-flex items-center gap-2 border border-blue-500 rounded-full px-5 py-2 mb-6 bg-[#0a0f1e]">
           <BadgeCheck className="w-5 h-5 text-blue-400" />
-          <span className="text-blue-400 text-xs font-semibold uppercase tracking-widest">
+          <span className="text-blue-400 text-[10px] md:text-xs font-semibold uppercase tracking-widest">
             Get In Touch
           </span>
         </div>

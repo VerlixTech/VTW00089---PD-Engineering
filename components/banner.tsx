@@ -19,7 +19,7 @@ const Banner = ({ heading, description }: BannerProps) => {
           <h2 className="text-white text-3xl md:text-4xl font-bold mb-4 leading-tight">
             {heading}
           </h2>
-          <p className="text-gray-400 text-sm leading-relaxed">
+          <p className="text-gray-400 text-sm md:text-base leading-relaxed">
             {description}
           </p>
         </div>
