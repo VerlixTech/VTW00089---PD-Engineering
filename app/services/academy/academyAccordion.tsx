@@ -109,7 +109,7 @@ export default function CoursesAccordion() {
         </p>
 
         {/* Accordion */}
-        <div className="space-y-3 p-2">
+        <div className="space-y-3 ">
           {accordionData.map((item, index) => {
             const panel = `panel${index}`;
             const isExpanded = expanded === panel;
@@ -133,8 +133,8 @@ export default function CoursesAccordion() {
                 <AccordionSummary
                   expandIcon={<ExpandMoreIcon sx={{ color: "white" }} />}
                   sx={{
-                    px: 0,
-                    py: 0,
+                    px: {xs:1, md:0},
+                    py: {xs:1, md:0},
                     minHeight: "unset",
                     "& .MuiAccordionSummary-content": {
                       margin: 0,
@@ -151,14 +151,14 @@ export default function CoursesAccordion() {
                     {/* Thumbnail */}
                     <div
                       className="relative flex-shrink-0"
-                      style={{ width: "clamp(100px, 25vw, 200px)", height: "clamp(65px, 16vw, 110px)" }}
+                      style={{ width: "clamp(8px, 25vw, 200px)", height: "clamp(80px, 16vw, 110px)" }}
                     >
                       <Image
                         src={item.image}
                         alt={item.title}
                         fill
-                        className="object-cover"
-                        sizes="(max-width: 640px) 100px, 200px"
+                        className="object-cover max-md:rounded-lg "
+                        sizes="(max-width: 640px) 80px, 200px"
                       />
                     </div>
 

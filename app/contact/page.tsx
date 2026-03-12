@@ -1,4 +1,4 @@
-import { ContactSection } from "@/components/contact-section";
+import { ContactSection } from "@/app/contact/contact-section";
 import ContactHero from "./contactHero";
 import ContactBanner from "./contactBanner";
 

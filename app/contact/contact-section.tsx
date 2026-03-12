@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from "react";
-import { sendContactForm } from "../lib/api";
+import { sendContactForm } from "../../lib/api";
 import { toast, ToastContainer } from 'react-toastify';
 import { ArrowRight } from "lucide-react";
 
@@ -43,9 +43,9 @@ export function ContactSection() {
   };
 
   const inputClass =
-    "w-full bg-transparent border-b border-gray-300 pb-2 text-gray-700 placeholder-[#D1D5DB] text-sm focus:outline-none focus:border-gray-600 transition duration-200";
+    "w-full bg-transparent border-b border-gray-300 pb-2 text-gray-700 placeholder:text-gray-500 text-sm focus:outline-none focus:border-gray-600 transition duration-200";
 
-  const labelClass = "block text-sm font-semibold uppercase tracking-widest text-[#9CA3AF] mb-3";
+  const labelClass = "block text-sm font-semibold uppercase tracking-widest text-[#1D1D1D] mb-3";
 
   return (
     <main className="bg-white font-sans">
@@ -57,7 +57,7 @@ export function ContactSection() {
             <h2 className="text-4xl mb-4 leading-tight">
               Send an Inquiry
             </h2>
-            <p className="text-[#9CA3AF] text-lg leading-relaxed">
+            <p className="text-[#1D1D1D] text-lg leading-relaxed">
               Tell us about your project or service requirement. Our specialized team will
               respond within 24 hours.
             </p>
