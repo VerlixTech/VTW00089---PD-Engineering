@@ -1,0 +1,24 @@
+
+import PageHero from "@/components/pageHero";
+import { Metadata } from "next";
+import CompanyOverview from "./companyOverview";
+import CoreValues from "./coreValues";
+
+export const metadata: Metadata = {
+    title: "About Us - PD Engineering & Academy",
+    description: "Learn more about us.",
+}
+
+export default function AboutUsPage () {    
+    return (
+        <main className="min-h-screen ">
+            <PageHero 
+                title="About Us"
+                heading="PD Engineering & Academy "
+                subHeading="Powering Performance & Developing Professionals"
+            />
+            <CompanyOverview/>
+            <CoreValues/>
+        </main>
+    )
+}
