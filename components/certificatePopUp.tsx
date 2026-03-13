@@ -25,7 +25,7 @@ const CertificatePopUp = ({ certificates, onClose }: Props) => {
       <div className="relative bg-white/70 backdrop-blur-[2px] rounded-xl p-4 sm:p-6 w-full max-w-4xl">
         <button
           onClick={onClose}
-          className="absolute top-3 right-3 text-gray-600 hover:text-black z-60"
+          className="absolute cursor-pointer top-3 right-3 text-gray-600 hover:text-black z-60"
         >
           <X size={28} />
         </button>
@@ -35,7 +35,7 @@ const CertificatePopUp = ({ certificates, onClose }: Props) => {
           {certificates.length > 1 && (
             <button
               onClick={prevCertificate}
-              className="p-1 sm:p-2 rounded-full bg-gray-200 hover:bg-gray-300"
+              className="p-1 cursor-pointer sm:p-2 rounded-full bg-gray-200 hover:bg-gray-300"
             >
               <ChevronLeft size={28} />
             </button>
@@ -53,7 +53,7 @@ const CertificatePopUp = ({ certificates, onClose }: Props) => {
           {certificates.length > 1 && (
             <button
               onClick={nextCertificate}
-              className="p-1 sm:p-2 rounded-full bg-gray-200 hover:bg-gray-300"
+              className="p-1 sm:p-2 cursor-pointer rounded-full bg-gray-200 hover:bg-gray-300"
             >
               <ChevronRight size={28} />
             </button>

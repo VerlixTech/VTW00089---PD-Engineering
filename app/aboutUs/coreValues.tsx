@@ -26,7 +26,7 @@ const CoreValues = () => {
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-8 items-center mb-14">
           <div>
-            <div className="inline-flex items-center gap-2 border border-gray-300 rounded-full bg-gray-100 px-4 py-1 mb-5 w-fit font-semibold">
+            <div className="inline-flex items-center gap-2 border border-gray-300 rounded-full bg-gray-100 px-4 py-1 mb-5 w-fit font-semibold animate-bounce-smooth">
               <BadgeCheck className="w-4 h-4 text-[#3B82F6]" />
               <span className="text-[#3B82F6] text-xs uppercase tracking-widest">
                 core values
