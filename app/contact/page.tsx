@@ -1,24 +1,27 @@
 import { ContactSection } from "@/app/contact/contact-section";
 import ContactHero from "./contactHero";
 import ContactBanner from "./contactBanner";
+import { Metadata } from "next";
 
-// export const metadata: Metadata = {
-//   title: "Contact Us - SAGA Engineering | Get In Touch",
-//   description:
-//     "Contact SAGA Engineering for industrial equipment solutions, machinery import & supply services. Located in Colombo, Sri Lanka. Call +94 71 70 70 30 or email us today.",
-//   keywords:
-//     "contact saga engineering, industrial equipment contact, machinery supply contact, engineering services sri lanka, colombo engineering company",
-//   openGraph: {
-//     title: "Contact SAGA Engineering",
-//     description:
-//       "Get in touch with SAGA Engineering for all your industrial equipment and machinery needs. Professional engineering services in Sri Lanka.",
-//     url: "https://www.sagaengineering.lk/contact",
-//     type: "website",
-//   },
-//   alternates: {
-//     canonical: "https://www.sagaengineering.lk/contact",
-//   },
-// }
+export const metadata: Metadata = {
+  title: "Contact Us - PD Engineering & Academy | Get In Touch",
+  description:
+    "Contact PD Engineering & Academy for specialized HVAC & MEP solutions and professional training. Located in Piliyandala, Sri Lanka. Call +94 11 218 3349 or email info@pdengineeringandacademy.com.",
+  keywords:
+    "contact PD Engineering, HVAC contact, MEP solutions contact, engineering services sri lanka, Piliyandala engineering company, professional training contact",
+  openGraph: {
+    title: "Contact PD Engineering & Academy",
+    description:
+      "Get in touch with PD Engineering & Academy for HVAC, MEP engineering solutions and professional training services in Sri Lanka.",
+    url: "https://www.pdengineeringacademy.com/contact",
+    type: "website",
+    siteName: "PD Engineering & Academy",
+    locale: "en_US",
+  },
+  alternates: {
+    canonical: "https://www.pdengineeringacademy.com/contact",
+  },
+}
 
 export default function ContactPage() {
   return (

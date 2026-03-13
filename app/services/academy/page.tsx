@@ -7,8 +7,30 @@ import AcademyHVACDesignRoom from "./academyHVACDesignRoom";
 
 export const metadata: Metadata = {
   title: "Academy Services - PD Engineering & Academy",
-  description: "Academy Services",
-}
+  description:
+    "Explore PD Engineering & Academy’s HVAC and MEP professional training programs, designed to equip engineers with practical, industry-ready skills.",
+  keywords:
+    "PD Engineering Academy, HVAC training, MEP training, professional engineering courses, HVAC design education, practical HVAC training, engineering workshops, technical training Sri Lanka",
+  openGraph: {
+    title: "Academy Services - PD Engineering & Academy",
+    description:
+      "Discover our comprehensive HVAC and MEP training programs, focusing on practical, industry-oriented skills for engineers and technicians.",
+    url: "https://www.pdengineeringacademy.com/services/academy",
+    type: "website",
+    siteName: "PD Engineering & Academy",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Academy Services - PD Engineering & Academy",
+    description:
+      "Practical HVAC and MEP training programs for engineers and technicians provided by PD Engineering & Academy in Sri Lanka.",
+  },
+  alternates: {
+    canonical: "https://www.pdengineeringacademy.com/services/academy",
+  },
+};
+
 
 export default function AcademyServicesPage() {
   return (
