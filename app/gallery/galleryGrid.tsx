@@ -13,14 +13,15 @@ const GalleryGrid = () => {
     { src: "/Gallery04.svg", alt: "Pipe and duct installation" },
     { src: "/Gallery05.svg", alt: "Industrial pump system installation" },
     { src: "/Gallery06.svg", alt: "HVAC academy training session" },
-  // images for second grid
+// images for second grid
     { src: "/Gallery01.svg", alt: "HVAC duct installation on ceiling" },
     { src: "/Gallery02.svg", alt: "Air conditioning unit internal components" },
     { src: "/Gallery03.svg", alt: "HVAC technicians on site" },
     { src: "/Gallery04.svg", alt: "Pipe and duct installation" },
     { src: "/Gallery05.svg", alt: "Industrial pump system installation" },
     { src: "/Gallery06.svg", alt: "HVAC academy training session" },
-   // images for third grid
+
+  // images for third grid
     { src: "/Gallery01.svg", alt: "HVAC duct installation on ceiling" },
     { src: "/Gallery02.svg", alt: "Air conditioning unit internal components" },
     { src: "/Gallery03.svg", alt: "HVAC technicians on site" },
@@ -33,10 +34,13 @@ const GalleryGrid = () => {
     setVisibleGrids((prev) => prev + 1);
   };
 
-  const shouldShowButton = visibleGrids < 3;
+  const shouldShowButton =
+    (visibleGrids === 1 && galleryImages.length >= 12) ||
+    (visibleGrids === 2 && galleryImages.length >= 18);
 
   const renderGrid = (startIndex: number, gridNumber: number) => {
     const gridImages = galleryImages.slice(startIndex, startIndex + 6);
+    if (gridImages.length < 6) return null;
     return (
       <div key={gridNumber} className={gridNumber > 1 ? "mt-6" : ""}>
         <div className="hidden md:block">

@@ -8,21 +8,27 @@ import "swiper/css/pagination";
 
 const slides = [
   {
-    image: "/hero1.svg",
+    image: "heroSlider/hero1.svg",
     title: "EMPOWERING THE NEXT GENERATION OF ENGINEERS",
     subtitle:
       "Industry-Focused HVAC Training & Professional Development Programs.",
   },
   {
-    image: "/hero2.svg",
-    title: "ADVANCED HVAC DESIGN TRAINING",
-    subtitle: "Hands-on engineering programs for future professionals.",
+    image: "heroSlider/hero3.svg",
+    title: "Quality. Accuracy. Performance worldwide.",
+    subtitle: "We deliver world-class engineering solutions built on quality workmanship, precise execution, and high-performance results.",
   },
   {
-    image: "/hero3.svg",
+    image: "heroSlider/hero2.svg",
     title: "Engineering Excellence in HVAC & MEP Solutions",
     subtitle:
       "Professional contracting, installation, and technical expertise you can trust.",
+  },
+   {
+    image: "heroSlider/hero4.svg",
+    title: "ASPEN Drain Pump Now Available at PD Engineers",
+    subtitle:
+      "The world’s slimmest condensate removal pump is designed to fit where other’s can’t!",
   },
 ];
 

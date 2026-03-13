@@ -47,7 +47,7 @@ const OurServices = () => {
             <div key={index} className="flex flex-col w-[348px]">
               {service.position === "bottom" && (
                 <>
-                  <div className="relative w-full h-[404px] overflow-hidden group">
+                  <div className="relative w-full h-[330px] overflow-hidden group">
                     <Image
                       src={service.image}
                       alt={service.title}
@@ -72,7 +72,7 @@ const OurServices = () => {
                   <div className="p-8 text-base text-black text-center bg-gradient-to-r from-[#5fa8d3] via-[#7bc76a] to-[#89CA29] h-[180px] flex items-center justify-center">
                     <p className="leading-relaxed">{service.description}</p>
                   </div>
-                  <div className="relative w-full h-[404px] overflow-hidden group">
+                  <div className="relative w-full h-[330px] overflow-hidden group">
                     <Image
                       src={service.image}
                       alt={service.title}
@@ -105,7 +105,7 @@ const OurServices = () => {
         <div className="flex md:hidden flex-col gap-8 justify-center items-center">
           {services.map((service, index) => (
             <div key={index} className="flex flex-col w-full max-w-[358px]">
-              <div className="relative w-full h-[220px] overflow-hidden group">
+              <div className="relative w-full h-[180px] overflow-hidden group">
                 <Image
                   src={service.image}
                   alt={service.title}
