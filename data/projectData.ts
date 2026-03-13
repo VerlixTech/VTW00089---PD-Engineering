@@ -23,11 +23,11 @@ export const projectData: Project[] = [
     status: "HANDED OVER",
   },
    {
-    title: "COMPLETED AC DUCTING WORKS AL BIDDA TOWER - QATAR",
+    title: "Hayleys Nature Next",
     image: "/projectIMG01.svg",
     description:
-      "Comprehensive MEP solutions for a luxury resort, featuring high-efficiency chillers designed for saline coastal environments.",
-    highlights: ["200+ Guest Rooms MEP", "Industrial Kitchen Ventilation"],
+      "Ventilation system including evaporative cooling system was designed, supplied, and is being installed at the proposed factory building for Hayleys Agriculture located in the Bingiriya Free Trade Zone.",
+    highlights: ["Engineering Design", "Equipment Supply","Professional Installation","Systematic Testing and Commissioning"],
   },
   {
     title: "Sayura Beach Hotel",

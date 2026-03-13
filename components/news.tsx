@@ -40,7 +40,7 @@ const News = () => {
         <div className="flex justify-center">
           <Link 
             href="/news" 
-            className="mt-14 border inline-block text-center border-black px-8 py-2 hover:bg-black hover:text-white transition duration-300 text-base font-semibold tracking-wider"
+            className="mt-6 md:mt-14 border inline-block text-center border-black px-8 py-2 hover:bg-black hover:text-white transition duration-300 text-base font-semibold tracking-wider"
           >
             View More
           </Link>

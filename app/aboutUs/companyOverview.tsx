@@ -36,7 +36,11 @@ const CompanyOverview = () => {
               diverse range of commercial, industrial, and hospitality projects.
             </p>
 
-            <p className="text-[#475569] text-sm md:text-base leading-relaxed mb-6">
+            
+
+            {expanded && (
+              <div>
+                <p className="text-[#475569] text-sm md:text-base leading-relaxed mb-6">
               We operate across two core sectors: engineering contracting and
               professional training. On the contracting side, we provide
               comprehensive HVAC and electromechanical services, including
@@ -50,8 +54,6 @@ const CompanyOverview = () => {
               coordinated project execution
             </p>
 
-            {expanded && (
-              <div>
                 <p className="text-[#475569] text-sm md:text-base leading-relaxed mb-6">
                   Our procurement and trading division is structured to support
                   urgent industrial requirements by sourcing and importing spare
@@ -88,7 +90,7 @@ const CompanyOverview = () => {
             <div>
               <button
                 onClick={() => setExpanded(!expanded)}
-                className="px-8 py-2 text-sm font-semibold bg-black text-white hover:bg-gray-800 transition duration-300 rounded-md "
+                className="px-8 py-2 text-sm font-semibold bg-black text-white hover:bg-gray-800 transition duration-300 rounded-md md:mt-6 lg:mt-10"
               >
                 {expanded ? "View Less" : "View More"}
               </button>

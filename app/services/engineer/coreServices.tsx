@@ -1,23 +1,23 @@
 import Image from "next/image";
-import { Wrench, Snowflake, Ruler, ShoppingCart, Wind } from "lucide-react";
+import { Wrench,ChartCandlestick, ShoppingCart, AirVent, Pickaxe, BadgeDollarSign } from "lucide-react";
 
 const topServices = [
   {
-    icon: Wrench,
+    icon: Pickaxe,
     title: "Contracting & Trading",
     description:
       "Specializing in HVAC installation, pre-insulated and G.I. duct installation as per DW-142 specifications, and insulation of G.I. ducts according to industry standards.",
     tags: [],
   },
   {
-    icon: Snowflake,
+    icon: AirVent,
     title: "Air Conditioning Solutions",
     description:
       "Supplying and installing a variety of air conditioning systems tailored to diverse projects across Qatar and Sri Lanka.",
     tags: [],
   },
   {
-    icon: Ruler,
+    icon: Wrench,
     title: "Fit-Out Jobs",
     description:
       "Supply, installation and modification of all civil electro-mechanical fit out projects",
@@ -60,7 +60,7 @@ const ServiceCard = ({ service }: { service: Service }) => {
 
 const CoreEngineeringServices = () => {
   return (
-    <section className="py-16 px-6">
+    <section className="pt-16 pb-6 lg:pt-16 px-6">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-2xl md:text-[40px] font-bold text-[#1E3A8A] mb-2">
           Core Engineering Services
@@ -104,7 +104,7 @@ const CoreEngineeringServices = () => {
       className="w-12 h-12 rounded-xl flex items-center justify-center mb-2"
       style={iconGradientStyle}
     >
-      <Wind className="w-6 h-6 text-white" />
+      <BadgeDollarSign className="w-6 h-6 text-white" />
     </div>
     <h3 className="text-base font-semibold text-[#1E3A8A]">Trading</h3>
     <p className="text-[#374151] text-sm leading-relaxed">

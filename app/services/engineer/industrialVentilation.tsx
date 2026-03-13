@@ -1,9 +1,9 @@
 import Image from "next/image";
-import { Wind } from "lucide-react";
+import { Fan } from "lucide-react";
 
 const IndustrialVentilation = () => {
   return (
-    <section className="py-16 px-6">
+    <section className="px-6">
       <div className="max-w-6xl mx-auto">
         <div className="rounded-2xl p-10 shadow-sm border border-gray-100 bg-[#F8FAFC]">
           <div className="grid md:grid-cols-2 gap-12 items-start">
@@ -14,7 +14,7 @@ const IndustrialVentilation = () => {
                   background: "linear-gradient(135deg, #5fa8d3, #89CA29)",
                 }}
               >
-                <Wind className="w-6 h-6 text-white" />
+                <Fan className="w-6 h-6 text-white" />
               </div>
 
               <h2 className="text-lg font-bold text-gray-900 mb-4">
@@ -49,7 +49,7 @@ const IndustrialVentilation = () => {
             <div className="flex items-center justify-center h-full">
               <div className="relative w-full h-[260px] rounded-xl overflow-hidden">
                 <Image
-                  src="/Industrial Ventilation & Cooling Solutions.svg"
+                  src="/Industrial Ventilation & Cooling Solutions_02.svg"
                   alt="Industrial Ventilation & Cooling Solutions"
                   fill
                   className="object-contain"
