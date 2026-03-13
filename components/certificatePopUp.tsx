@@ -25,7 +25,7 @@ const CertificatePopUp = ({ certificates, onClose }: Props) => {
       <div className="relative bg-white/70 backdrop-blur-[2px] rounded-xl p-4 sm:p-6 w-full max-w-4xl">
         <button
           onClick={onClose}
-          className="absolute top-3 right-3 text-gray-600 hover:text-black"
+          className="absolute top-3 right-3 text-gray-600 hover:text-black z-60"
         >
           <X size={28} />
         </button>

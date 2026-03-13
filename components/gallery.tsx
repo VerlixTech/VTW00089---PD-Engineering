@@ -1,6 +1,6 @@
 "use client";
 
-// import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
@@ -27,17 +27,17 @@ const Gallery = () => {
     return () => clearInterval(timer);
   }, [galleryImages.length]);
 
-  // const goToNext = () => {
-  //   setCurrentIndex((prevIndex) =>
-  //     prevIndex === galleryImages.length - 1 ? 0 : prevIndex + 1
-  //   );
-  // };
+  const goToNext = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === galleryImages.length - 1 ? 0 : prevIndex + 1
+    );
+  };
 
-  // const goToPrev = () => {
-  //   setCurrentIndex((prevIndex) =>
-  //     prevIndex === 0 ? galleryImages.length - 1 : prevIndex - 1
-  //   );
-  // };
+  const goToPrev = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? galleryImages.length - 1 : prevIndex - 1
+    );
+  };
 
   const goToSlide = (index: number) => {
     setCurrentIndex(index);
@@ -151,7 +151,7 @@ const Gallery = () => {
             />
 
             {/* Navigation Arrows */}
-            {/* <button
+            <button
               onClick={goToPrev}
               className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 transition duration-300"
               aria-label="Previous image"
@@ -165,7 +165,7 @@ const Gallery = () => {
               aria-label="Next image"
             >
                <ChevronRight />
-            </button> */}
+            </button>
           </div>
 
           {/* Thumbnail/Dots Navigation */}
@@ -185,9 +185,9 @@ const Gallery = () => {
           </div>
 
           {/* Image Counter */}
-          {/* <p className="text-gray-600 mt-2 text-sm">
+          <p className="text-gray-600 mt-2 text-sm">
             {currentIndex + 1} / {galleryImages.length}
-          </p> */}
+          </p>
         </div>
 
         <div className="flex justify-center">

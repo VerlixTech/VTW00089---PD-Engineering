@@ -8,17 +8,16 @@ const OurQualification = () => {
 
 const certificates = [
   "/certificates/Certificate.svg",
-  "/certificates/projectIMG01.svg",
 ];
 
   return (
-    <section className="md:pt-10 md:mt-15 px-6">
+    <section className="md:pt-10 mt-8 md:mt-15 px-6 ">
       <div className="max-w-7xl mx-auto">
         
         <div className="grid md:grid-cols-2 mb-[2%]">
           <div>
             <div className="text-lg md:text-[36px]">Our Qualifications</div>
-            <p className="text-xl md:text-[40px] font-bold">
+            <p className="text-2xl md:text-[40px] font-bold">
               Internationally <br className="max-md:hidden"/> Recognized
             </p>
           </div>
@@ -32,7 +31,7 @@ const certificates = [
         <div className="flex justify-center max-md:mt-8 mb-12">
           <button
             onClick={() => setOpen(true)}
-            className="bg-[#0A1620] hover:bg-[#0A1620]/90 text-white font-bold py-2 px-6 rounded-lg text-base md:text-2xl"
+            className="bg-[#0A1620] hover:bg-[#0A1620]/90 text-white font-bold py-2 px-6 rounded-lg text-base md:text-xl"
           >
             View Certificates
           </button>
