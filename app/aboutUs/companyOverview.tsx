@@ -22,7 +22,7 @@ const CompanyOverview = () => {
               </span>
             </div>
 
-            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+            <h2 className="text-2xl md:text-[40px] font-bold text-gray-900 mb-6 leading-tight">
               PD Engineering & <br className="max-md:hidden" /> Academy
             </h2>
 
@@ -185,7 +185,7 @@ const CompanyOverview = () => {
             <div
               className="rounded-2xl px-10 py-12 flex flex-col md:flex-row gap-10 items-center"
               style={{
-                backgroundImage: `linear-gradient(135deg, rgba(26,26,46,0.92) 0%, rgba(22,33,62,0.92) 50%, rgba(26,42,26,0.92) 100%), url('/successProject02.svg')`,
+                backgroundImage: `linear-gradient(90deg, #00080D 0%, #0043738A 73%, #00000033 100%), url('/successProject02.svg')`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
@@ -205,15 +205,16 @@ const CompanyOverview = () => {
 
               <div className="flex flex-col">
                 <div className="inline-flex items-center gap-2 border border-[#3B82F633] rounded-full bg-[#3B82F61A] px-4 py-1 mb-5 w-fit font-semibold">
+                  <BadgeCheck className="w-4 h-4 text-[#3B82F6]" />
                   <span className="text-[#3B82F6] text-xs uppercase tracking-widest">
                     Leadership
                   </span>
                 </div>
 
                 <h3
-                  className="text-2xl font-bold mb-4"
+                  className="text-2xl font-bold mb-4 md:max-w-sm"
                   style={{
-                    background: "linear-gradient(to right, #89CA29, #66C5FF)",
+                    background: "linear-gradient(to right, #89CA29, #41b2f8)",
                     WebkitBackgroundClip: "text",
                     WebkitTextFillColor: "transparent",
                     backgroundClip: "text",
@@ -223,7 +224,7 @@ const CompanyOverview = () => {
                 </h3>
 
                 {/* Bio paragraphs */}
-                <p className="text-gray-400 text-sm leading-relaxed mb-4">
+                <p className="text-white text-sm leading-relaxed mb-4">
                   Eng. Preemal Kumara is a distinguished Mechanical and HVAC
                   professional with over eighteen years of extensive experience
                   in Sri Lanka and the Middle East, particularly in Qatar. He
@@ -233,7 +234,7 @@ const CompanyOverview = () => {
                   (UK), and a Higher National Diploma in Mechanical
                   Engineering.{" "}
                 </p>
-                <p className="text-gray-400 text-sm leading-relaxed mb-4">
+                <p className="text-white text-sm leading-relaxed mb-4">
                   He is an Incorporated Engineer, a Fellow Member of the
                   Institution of Incorporated Engineers Sri Lanka (FIIESL), and
                   a member of MEGSL. A recognized, certified expert in VRF
@@ -243,7 +244,7 @@ const CompanyOverview = () => {
                   German Tech and Korean Tech and delivering CPD programs for
                   IIESL, the Ministry of Environment, and University Colleges.
                 </p>
-                <p className="text-gray-400 text-sm leading-relaxed">
+                <p className="text-white text-sm leading-relaxed">
                   In addition, he is an active member of Toastmasters
                   International, where he promotes leadership, communication
                   excellence, and professional development. He is widely

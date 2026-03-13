@@ -5,6 +5,7 @@ import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import ExpandLessIcon from "@mui/icons-material/ExpandLess";
 import Typography from "@mui/material/Typography";
 import { Check } from "lucide-react";
 import Image from "next/image";
@@ -131,27 +132,57 @@ export default function CoursesAccordion() {
                 }}
               >
                 <AccordionSummary
-                  expandIcon={<ExpandMoreIcon sx={{ color: "white" }} />}
+                  // expandIcon={<ExpandMoreIcon sx={{ color: "white" }} />}
+                  // sx={{
+                  //   px: {xs:1, md:0},
+                  //   py: {xs:1, md:0},
+                  //   minHeight: "unset",
+                  //   "& .MuiAccordionSummary-content": {
+                  //     margin: 0,
+                  //     alignItems: "center",
+                  //   },
+                  //   "& .MuiAccordionSummary-expandIconWrapper": {
+                  //     pr: {xs:1 , sm:2},
+                  //     flexShrink: 0,
+                  //   },
+                  // }}
+
+                  expandIcon={
+                    isExpanded ? (
+                      <ExpandLessIcon sx={{ color: "white" }} /> 
+                    ) : (
+                      <ExpandMoreIcon sx={{ color: "white" }} /> 
+                    )
+                  }
                   sx={{
-                    px: {xs:1, md:0},
-                    py: {xs:1, md:0},
+                    px: { xs: 1, md: 0 },
+                    py: { xs: 1, md: 0 },
                     minHeight: "unset",
                     "& .MuiAccordionSummary-content": {
                       margin: 0,
                       alignItems: "center",
                     },
                     "& .MuiAccordionSummary-expandIconWrapper": {
-                      pr: {xs:1 , sm:2},
+                      pr: { xs: 0, sm: 2 },
                       flexShrink: 0,
+                      transform: "none !important",
+                      transition: "none !important",
+                    },
+                    "& .MuiAccordionSummary-expandIconWrapper.Mui-expanded": {
+                      transform: "none !important",
                     },
                   }}
                 >
+
                   {/* Always horizontal: image left, text right */}
                   <div className="flex flex-row items-center w-full">
                     {/* Thumbnail */}
                     <div
                       className="relative flex-shrink-0"
-                      style={{ width: "clamp(8px, 25vw, 200px)", height: "clamp(80px, 16vw, 110px)" }}
+                      style={{
+                        width: "clamp(8px, 25vw, 200px)",
+                        height: "clamp(80px, 16vw, 110px)",
+                      }}
                     >
                       <Image
                         src={item.image}
@@ -167,7 +198,7 @@ export default function CoursesAccordion() {
                       <Typography
                         sx={{
                           color: "white",
-                          fontWeight: 700,
+                          fontWeight: 600,
                           fontSize: { xs: "12px", sm: "18px", md: "28px" },
                           lineHeight: 1.3,
                           overflow: "hidden",
@@ -206,7 +237,10 @@ export default function CoursesAccordion() {
                   </p>
                   <ul className="space-y-2 sm:space-y-1">
                     {item.bullets.map((bullet, i) => (
-                      <li key={i} className="flex items-start gap-2 text-gray-400 text-xs md:text-sm">
+                      <li
+                        key={i}
+                        className="flex items-start gap-2 text-gray-400 text-xs md:text-sm"
+                      >
                         <Check className="w-4 h-4 text-[#89CA29] mt-0.5 flex-shrink-0" />
                         <span className="flex-1">{bullet}</span>
                       </li>
