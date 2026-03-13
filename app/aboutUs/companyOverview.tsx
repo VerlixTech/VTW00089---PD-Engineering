@@ -15,7 +15,7 @@ const CompanyOverview = () => {
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div className="flex flex-col">
-            <div className="inline-flex items-center gap-2 border border-gray-300 rounded-full bg-gray-100 px-4 py-1 max-md:mt-4 mb-5 w-fit font-semibold">
+            <div className="inline-flex items-center gap-2 border border-gray-300 rounded-full bg-gray-100 px-4 py-1 max-md:mt-4 mb-5 w-fit font-semibold animate-bounce-smooth">
               <BadgeCheck className="w-4 h-4 text-[#3B82F6]" />
               <span className="text-[#3B82F6] text-xs uppercase tracking-widest">
                 Company Overview
@@ -206,7 +206,7 @@ const CompanyOverview = () => {
               </div>
 
               <div className="flex flex-col">
-                <div className="inline-flex items-center gap-2 border border-[#3B82F633] rounded-full bg-[#3B82F61A] px-4 py-1 mb-5 w-fit font-semibold">
+                <div className="inline-flex items-center gap-2 border border-[#3B82F633] rounded-full bg-[#3B82F61A] px-4 py-1 mb-5 w-fit font-semibold animate-bounce-smooth">
                   <BadgeCheck className="w-4 h-4 text-[#3B82F6]" />
                   <span className="text-[#3B82F6] text-xs uppercase tracking-widest">
                     Leadership

@@ -4,6 +4,18 @@
   --background: #ffffff;
   --foreground: #171717;
 }
+@keyframes bounce-smooth {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+.animate-bounce-smooth {
+  animation: bounce-smooth 2s infinite;
+}
 
 @theme inline {
   --color-background: var(--background);

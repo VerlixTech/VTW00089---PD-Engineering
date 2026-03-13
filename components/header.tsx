@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Menu, X, ChevronDown } from "lucide-react";
-
+import { usePathname } from "next/navigation";
 export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [mobileServiceOpen, setMobileServiceOpen] = useState(false);
@@ -13,6 +13,8 @@ export function Header() {
     setMobileOpen(false);
     setMobileServiceOpen(false); 
   };
+
+  const pathname = usePathname();
 
   return (
     <header className="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-black ">
@@ -27,40 +29,64 @@ export function Header() {
           {/* Desktop Navigation */}
 
           <nav className="hidden lg:flex items-center gap-10 text-white font-medium">
-            <Link href="/" className="hover:text-[#89CA29] transition">
-              Home
+<Link
+  href="/"
+  className={`transition hover:text-[#89CA29] ${
+    pathname === "/" ? "text-[#89CA29]" : "text-white"
+  }`}
+>              Home
             </Link>
 
-            <Link href="/aboutUs" className="hover:text-[#89CA29] transition">
-              About Us
-            </Link>
+           <Link
+  href="/aboutUs"
+  className={`transition hover:text-[#89CA29] ${
+    pathname === "/aboutUs" ? "text-[#89CA29]" : "text-white"
+  }`}
+>
+  About Us
+</Link>
+
 
             {/* Services Dropdown */}
 
             <div className="relative group">
-              <button className="flex items-center gap-1 hover:text-[#89CA29] transition">
-                Our Services
-                <ChevronDown size={16} />
-              </button>
+    <button
+  className={`flex items-center cursor-pointer gap-1 transition ${
+    pathname.startsWith("/services") ? "text-[#89CA29]" : "text-white"
+  }`}
+>
+  Our Services
+  <ChevronDown size={16} />
+</button>
 
               <div className="absolute -ml-4 left-0 top-full pt-4 opacity-0 invisible translate-y-2 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-200">
                 <div className="bg-black border border-white/10 rounded-xl p-4 w-36 shadow-lg">
-                  <Link href="/services/engineer" className="block py-2 hover:text-[#89CA29]">
-                    Engineer
-                  </Link>
+            <Link
+  href="/services/engineer"
+  className={`block py-2 hover:text-[#89CA29] ${
+    pathname === "/services/engineer" ? "text-[#89CA29]" : "text-white"
+  }`}
+>
+  Engineer
+</Link>
 
-                  <Link href="/services/academy" className="block py-2 hover:text-[#89CA29]">
-                    Academy
-                  </Link>
+<Link
+  href="/services/academy"
+  className={`block py-2 hover:text-[#89CA29] ${
+    pathname === "/services/academy" ? "text-[#89CA29]" : "text-white"
+  }`}
+>
+  Academy
+</Link>
                 </div>
               </div>
             </div>
 
-            <Link href="/projects" className="hover:text-[#89CA29] transition">
+            <Link href="/projects" className={`transition hover:text-[#89CA29] ${pathname === "/projects" ? "text-[#89CA29]" : "text-white"}`}>
               Projects
             </Link>
 
-            <Link href="/news" className="hover:text-[#89CA29] transition">
+            <Link href="/news" className={`transition hover:text-[#89CA29] ${pathname === "/news" ? "text-[#89CA29]" : "text-white"}`}>
               News & Events
             </Link>
           </nav>
@@ -93,7 +119,7 @@ export function Header() {
           <div className="flex flex-col px-6 py-6 gap-4 text-white">
             <Link 
               href="/" 
-              className="hover:text-[#89CA29]"
+                 className={`hover:text-[#89CA29] ${pathname === "/" ? "text-[#89CA29]" : ""}`}
               onClick={closeMobileMenu}
             >
               Home
@@ -101,7 +127,7 @@ export function Header() {
 
             <Link 
               href="/aboutUs" 
-              className="hover:text-[#89CA29]"
+                 className={`hover:text-[#89CA29] ${pathname === "/aboutUs" ? "text-[#89CA29]" : ""}`}
               onClick={closeMobileMenu}
             >
               About Us
@@ -111,7 +137,9 @@ export function Header() {
 
             <button
               onClick={() => setMobileServiceOpen(!mobileServiceOpen)}
-              className="flex items-center justify-between hover:text-[#89CA29]"
+               className={`flex items-center cursor-pointer justify-between hover:text-[#89CA29] ${
+          pathname.startsWith("/services") ? "text-[#89CA29]" : "" 
+        }`}
             >
               Our Services
               <ChevronDown size={18} />
@@ -121,7 +149,7 @@ export function Header() {
               <div className="pl-4 flex flex-col gap-2 text-sm">
                 <Link 
                   href="/services/engineer" 
-                  className="hover:text-[#89CA29]"
+                   className={`hover:text-[#89CA29] ${pathname === "/services/engineer" ? "text-[#89CA29]" : ""}`}
                   onClick={closeMobileMenu}
                 >
                   Engineer
@@ -129,7 +157,7 @@ export function Header() {
 
                 <Link 
                   href="/services/academy" 
-                  className="hover:text-[#89CA29]"
+                  className={`hover:text-[#89CA29] ${pathname === "/services/academy" ? "text-[#89CA29]" : ""}`}
                   onClick={closeMobileMenu}
                 >
                   Academy
@@ -139,7 +167,7 @@ export function Header() {
 
             <Link 
               href="/projects" 
-              className="hover:text-[#89CA29]"
+              className={`hover:text-[#89CA29] ${pathname === "/projects" ? "text-[#89CA29]" : ""}`}
               onClick={closeMobileMenu}
             >
               Projects
@@ -147,7 +175,7 @@ export function Header() {
 
             <Link 
               href="/news" 
-              className="hover:text-[#89CA29]"
+              className={`hover:text-[#89CA29] ${pathname === "/news" ? "text-[#89CA29]" : ""}`}
               onClick={closeMobileMenu}
             >
               News & Events

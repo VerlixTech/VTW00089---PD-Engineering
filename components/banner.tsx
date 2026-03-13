@@ -1,3 +1,4 @@
+"use client";
 interface BannerProps {
   heading: string;
   description: string;
@@ -26,7 +27,8 @@ const Banner = ({ heading, description }: BannerProps) => {
           {/* Right Content */}
         <div className="flex-shrink-0">
           <button
-            className="px-10 py-3 rounded-full text-white font-medium text-sm transition duration-300 hover:opacity-90"
+          onClick={() => window.location.href = "/contact"}
+            className="px-10 py-3 cursor-pointer rounded-full text-white font-medium text-sm transition duration-300 hover:opacity-90"
             style={{
               background: "linear-gradient(to right, #5fa8d3, #89CA29)",
             }}
