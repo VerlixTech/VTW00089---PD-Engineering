@@ -8,21 +8,27 @@ import "swiper/css/pagination";
 
 const slides = [
   {
-    image: "/hero1.svg",
+    image: "heroSlider/hero1.svg",
     title: "EMPOWERING THE NEXT GENERATION OF ENGINEERS",
     subtitle:
       "Industry-Focused HVAC Training & Professional Development Programs.",
   },
   {
-    image: "/hero2.svg",
-    title: "ADVANCED HVAC DESIGN TRAINING",
-    subtitle: "Hands-on engineering programs for future professionals.",
+    image: "heroSlider/hero3.svg",
+    title: "Quality. Accuracy. Performance worldwide.",
+    subtitle: "We deliver world-class engineering solutions built on quality workmanship, precise execution, and high-performance results.",
   },
   {
-    image: "/hero3.svg",
+    image: "heroSlider/hero2.svg",
     title: "Engineering Excellence in HVAC & MEP Solutions",
     subtitle:
       "Professional contracting, installation, and technical expertise you can trust.",
+  },
+   {
+    image: "heroSlider/hero4.svg",
+    title: "ASPEN Drain Pump Now Available at PD Engineers",
+    subtitle:
+      "The world’s slimmest condensate removal pump is designed to fit where other’s can’t!",
   },
 ];
 
@@ -50,7 +56,7 @@ export function HeroSlider() {
               {/* Content */}
 
               <div className="relative z-10 text-center text-white px-6 max-w-4xl ">
-                <h1 className="text-xl md:text-5xl font-bold leading-tight">
+                <h1 className="text-[26px] md:text-5xl font-bold leading-tight">
                   {slide.title}
                 </h1>
 
@@ -63,17 +69,17 @@ export function HeroSlider() {
                 <div className="mt-12 max-w-3xl mx-auto">
                   {/* Mobile: stacked individual cards */}
                   <div className="flex flex-col items-center gap-3 md:hidden  ">
-                    <div className="backdrop-blur-lg bg-white/30 rounded-2xl py-4 px-8 text-center text-sm w-[70%] ">
-                      <h3 className="font-bold">100%</h3>
-                      <p className="text-gray-200">Trusted</p>
+                    <div className="backdrop-blur-lg bg-white/30 rounded-2xl py-4 px-8 text-center  w-[70%] ">
+                      <h3 className="font-bold text-lg">100%</h3>
+                      <p className="text-gray-200 text-sm ">Trusted</p>
                     </div>
-                    <div className="backdrop-blur-lg bg-white/30 rounded-2xl py-4 px-8 text-center text-sm w-[70%]">
-                      <h3 className=" font-bold">18+</h3>
-                      <p className="text-gray-200">Years Experience</p>
+                    <div className="backdrop-blur-lg bg-white/30 rounded-2xl py-4 px-8 text-center  w-[70%]">
+                      <h3 className=" font-bold text-lg">18+</h3>
+                      <p className="text-gray-200 text-sm">Years Experience</p>
                     </div>
-                    <div className="backdrop-blur-lg bg-white/30 rounded-2xl py-4 px-8 text-center text-sm w-[70%]">
-                      <h3 className=" font-bold text-white">100+</h3>
-                      <p className="text-gray-200">Projects Completed</p>
+                    <div className="backdrop-blur-lg bg-white/30 rounded-2xl py-4 px-8 text-center  w-[70%]">
+                      <h3 className=" font-bold text-white text-lg">100+</h3>
+                      <p className="text-gray-200 text-sm">Projects Completed</p>
                     </div>
                   </div>
 

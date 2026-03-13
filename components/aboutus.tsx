@@ -12,7 +12,7 @@ export function AboutUs() {
     >
 
       {/* Content */}
-      <div className="relative max-w-7xl mx-auto px-6 py-4 md:py-10 grid md:grid-cols-2 gap-16 items-center">
+      <div className="relative max-w-7xl mx-auto px-6 py-4 md:py-10 grid md:grid-cols-2 gap-6 md:gap-16 items-center mt-6 md:mt-0">
         {/* Right Content */}
         <div>
           <h4 className="text-lg md:text-[36px] mb-2">About</h4>
@@ -45,7 +45,7 @@ export function AboutUs() {
           />
         </div>
       </div>
-<div className="relative mb-10 max-w-7xl mx-auto max-xl:mx-4 rounded-2xl bg-linear-to-r from-[#89CA29] via-[#7bc76a] to-[#5fa8d3] p-10 flex items-center justify-center">
+<div className="relative mb-10 max-w-7xl mx-auto max-xl:mx-4 rounded-2xl bg-linear-to-r from-[#89CA29] via-[#7bc76a] to-[#5fa8d3] p-10 flex items-center justify-center mt-6 md:mt-0">
   <h2 className="text-black text-2xl md:text-4xl font-markScript text-center">
     Powering Performance & Developing Professionals
   </h2>

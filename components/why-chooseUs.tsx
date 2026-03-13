@@ -14,7 +14,7 @@ const WhyChooseUs = () => {
       <div className="max-w-7xl mx-auto grid md:grid-cols-7 gap-4 md:gap-12 items-center">
         {/* Left Side */}
         <div className="col-span-3">
-          <p className=" uppercase font-bold text-2xl max-lg:text-[10px] tracking-widest text-text-[#FFFFFF] mb-4">
+          <p className=" uppercase font-bold text-2xl max-lg:text-xs tracking-widest text-text-[#FFFFFF] mb-4">
             Why Choose Us?
           </p>
 
@@ -28,7 +28,7 @@ const WhyChooseUs = () => {
         </div>
 
         {/* Right Side */}
-        <div className="col-span-4 space-y-3 md:space-y-6 text-[#FFFFFFA1] lg:text-lg md:text-sm text-xs text-justify">
+        <div className="col-span-4 space-y-3 md:space-y-6 text-[#FFFFFFA1] lg:text-lg md:text-base text-xs text-justify">
           <p>
             Where precision meets performance in MEP and HVAC solutions. With
             extensive industry experience and technical expertise, PD
@@ -51,7 +51,7 @@ const WhyChooseUs = () => {
             {features.map((item, index) => (
               <div key={index} className="flex items-center gap-3">
                 <div className="w-[4px] h-5 bg-[#89CA29]" />
-                <p className="text-white text-base max-md:text-[9px] font-bold">{item}</p>
+                <p className="text-white md:text-base max-md:text-xs font-bold">{item}</p>
               </div>
             ))}
           </div>

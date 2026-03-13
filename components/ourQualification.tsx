@@ -11,13 +11,13 @@ const certificates = [
 ];
 
   return (
-    <section className="md:pt-10 md:mt-15 px-6">
+    <section className="md:pt-10 mt-8 md:mt-15 px-6 ">
       <div className="max-w-7xl mx-auto">
         
         <div className="grid md:grid-cols-2 mb-[2%]">
           <div>
             <div className="text-lg md:text-[36px]">Our Qualifications</div>
-            <p className="text-xl md:text-[40px] font-bold">
+            <p className="text-2xl md:text-[40px] font-bold">
               Internationally <br className="max-md:hidden"/> Recognized
             </p>
           </div>
