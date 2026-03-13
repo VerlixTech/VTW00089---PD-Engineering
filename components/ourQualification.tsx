@@ -17,13 +17,13 @@ const certificates = [
         
         <div className="grid md:grid-cols-2 mb-[2%]">
           <div>
-            <div className="text-[36px]">Our Qualifications</div>
-            <p className="text-[40px] font-bold">
-              Internationally <br /> Recognized
+            <div className="text-lg md:text-[36px]">Our Qualifications</div>
+            <p className="text-xl md:text-[40px] font-bold">
+              Internationally <br className="max-md:hidden"/> Recognized
             </p>
           </div>
 
-          <p className="text-gray-600 text-xl">
+          <p className="text-gray-600 text-base md:text-xl max-md:mt-4 ">
             Certified expertise and industry-accredited skills that ensure
             high-quality engineering solutions.
           </p>

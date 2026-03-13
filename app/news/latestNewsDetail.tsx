@@ -37,7 +37,7 @@ const LatestNewsList = () => {
                   <span className="text-[#64748B] text-xs md:text-sm">{news.date}</span>
                 </div>
 
-                <h2 className="text-2xl md:text-5xl font-bold text-[#0F172A] max-w-3xl leading-tight mb-5">
+                <h2 className="text-2xl md:text-[40px] font-bold text-[#0F172A] max-w-3xl leading-tight mb-5">
                   {news.title}
                 </h2>
 

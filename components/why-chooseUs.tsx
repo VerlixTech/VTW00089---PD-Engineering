@@ -11,14 +11,14 @@ const features = [
 const WhyChooseUs = () => {
   return (
     <section className="w-full bg-[#07131a] text-white py-10 px-6">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-7 gap-12 items-center">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-7 gap-4 md:gap-12 items-center">
         {/* Left Side */}
         <div className="col-span-3">
           <p className=" uppercase font-bold text-2xl max-lg:text-[10px] tracking-widest text-text-[#FFFFFF] mb-4">
             Why Choose Us?
           </p>
 
-          <h2 className="lg:text-3xl md:text-2xl text-xl font-bold leading-snug">
+          <h2 className="lg:text-[40px] md:text-2xl text-xl font-bold leading-snug">
             <span className="bg-gradient-to-r from-[#89CA29] via-[#7bc76a] to-[#5fa8d3] bg-clip-text text-transparent">
               Redefining Engineering <br /> Excellence With PD <br />
               Engineering & <br />
@@ -28,7 +28,7 @@ const WhyChooseUs = () => {
         </div>
 
         {/* Right Side */}
-        <div className="col-span-4 space-y-6 text-[#FFFFFFA1] lg:text-lg md:text-sm text-xs text-justify">
+        <div className="col-span-4 space-y-3 md:space-y-6 text-[#FFFFFFA1] lg:text-lg md:text-sm text-xs text-justify">
           <p>
             Where precision meets performance in MEP and HVAC solutions. With
             extensive industry experience and technical expertise, PD
@@ -47,7 +47,7 @@ const WhyChooseUs = () => {
           </p>
 
           {/* Features */}
-          <div className="space-y-3 pt-4">
+          <div className="space-y-2 md:space-y-3 pt-2 md:pt-4">
             {features.map((item, index) => (
               <div key={index} className="flex items-center gap-3">
                 <div className="w-[4px] h-5 bg-[#89CA29]" />

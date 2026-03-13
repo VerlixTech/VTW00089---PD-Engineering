@@ -6,17 +6,17 @@ const ContactBanner = () => {
       <div
         className="max-w-7xl mx-auto rounded-2xl px-12 py-8 md:py-16 flex flex-col items-center justify-center text-center gap-6"
         style={{
-          backgroundImage: `linear-gradient(135deg, rgba(26,26,46,0.92) 0%, rgba(22,33,62,0.92) 50%, rgba(26,42,26,0.92) 100%), url('/successProject02.svg')`,
+          backgroundImage: `linear-gradient(90deg, #00080D 0%, #0043738A 73%, #00000033 100%), url('/successProject02.svg')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
 
-        <h2 className="text-white text-4xl md:text-7xl font-semibold leading-tight">
+        <h2 className="text-white text-3xl md:text-5xl font-semibold leading-tight">
           Let&apos;s Connect.
         </h2>
 
-        <p className="text-[#9CA3AF] text-sm md:text-xl leading-relaxed max-w-lg">
+        <p className="text-[#9CA3AF] text-sm md:text-lg leading-relaxed max-w-lg">
           Follow our journey and stay updated with the latest in engineering innovation and
 corporate milestones.
         </p>

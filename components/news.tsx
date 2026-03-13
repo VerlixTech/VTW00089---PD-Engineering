@@ -9,7 +9,7 @@ const News = () => {
   return (
     <section className="py-10 px-6">
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-lg md:text-[40px] font-bold mb-4">Latest News</h2>
+        <h2 className="text-2xl md:text-[40px] font-bold mb-4">Latest News</h2>
         <p className="text-gray-600 text-lg md:text-[20px] max-w-2xl mx-auto mb-14">
           Stay updated with our recent projects, workshops, and professional
           training programs.
