@@ -50,11 +50,11 @@ export function HeroSlider() {
               {/* Content */}
 
               <div className="relative z-10 text-center text-white px-6 max-w-4xl ">
-                <h1 className="text-base md:text-5xl font-bold leading-tight">
+                <h1 className="text-xl md:text-5xl font-bold leading-tight">
                   {slide.title}
                 </h1>
 
-                <p className="mt-6 text-xs md:text-base text-gray-200">
+                <p className="mt-6 text-base md:text-lg text-gray-200">
                   {slide.subtitle}
                 </p>
 
@@ -63,15 +63,15 @@ export function HeroSlider() {
                 <div className="mt-12 max-w-3xl mx-auto">
                   {/* Mobile: stacked individual cards */}
                   <div className="flex flex-col items-center gap-3 md:hidden  ">
-                    <div className="backdrop-blur-lg bg-white/30 rounded-2xl py-4 px-8 text-center text-[10px] w-[70%] ">
+                    <div className="backdrop-blur-lg bg-white/30 rounded-2xl py-4 px-8 text-center text-sm w-[70%] ">
                       <h3 className="font-bold">100%</h3>
                       <p className="text-gray-200">Trusted</p>
                     </div>
-                    <div className="backdrop-blur-lg bg-white/30 rounded-2xl py-4 px-8 text-center text-[10px] w-[70%]">
+                    <div className="backdrop-blur-lg bg-white/30 rounded-2xl py-4 px-8 text-center text-sm w-[70%]">
                       <h3 className=" font-bold">18+</h3>
                       <p className="text-gray-200">Years Experience</p>
                     </div>
-                    <div className="backdrop-blur-lg bg-white/30 rounded-2xl py-4 px-8 text-center text-[10px] w-[70%]">
+                    <div className="backdrop-blur-lg bg-white/30 rounded-2xl py-4 px-8 text-center text-sm w-[70%]">
                       <h3 className=" font-bold text-white">100+</h3>
                       <p className="text-gray-200">Projects Completed</p>
                     </div>

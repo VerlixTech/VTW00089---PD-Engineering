@@ -93,7 +93,7 @@ export default function CoursesAccordion() {
     >
       <div className="max-w-6xl mx-auto px-2">
         <h3
-          className="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4"
+          className="text-2xl md:text-[40px] font-bold mb-3 sm:mb-4"
           style={{
             background: "linear-gradient(to right, #89CA29, #66C5FF)",
             WebkitBackgroundClip: "text",
@@ -194,12 +194,12 @@ export default function CoursesAccordion() {
                     </div>
 
                     {/* Text */}
-                    <div className="flex flex-col justify-center md:px-3 pl-2 min-w-0">
+                    <div className="flex flex-col justify-center px-3 md:pl-12 min-w-0">
                       <Typography
                         sx={{
                           color: "white",
                           fontWeight: 600,
-                          fontSize: { xs: "12px", sm: "18px", md: "28px" },
+                          fontSize: { xs: "12px", sm: "18px", md: "24px" },
                           lineHeight: 1.3,
                           overflow: "hidden",
                           textOverflow: "ellipsis",

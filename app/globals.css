@@ -50,3 +50,31 @@ body {
 .font-markScript {
   font-family: var(--font-markScript);
 }
+
+.swiper-pagination {
+  bottom: 60px !important;  
+}
+
+@media (min-width: 768px) {
+  .swiper-pagination {
+    bottom: 70px !important; 
+  }
+}
+
+@media (min-width: 1024px) {
+  .swiper-pagination {
+    bottom: 100px !important; 
+  }
+}
+
+/* All dots */
+.swiper-pagination-bullet {
+  background-color: #84f2a3 !important; 
+  opacity: 1 !important;                
+}
+
+/* Active dot */
+.swiper-pagination-bullet-active {
+  background-color: #89CA29 !important;
+  opacity: 1 !important;
+}
