@@ -30,21 +30,20 @@ export default function ContactPage() {
       <div className="w-full px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto mt-10 mb-[5%]">
         <div className="w-full bg-gray-100  overflow-hidden shadow-md">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.398093173135!2d79.90953097499579!3d6.842786293155382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25a9bb80b2123%3A0xd7e800e860fdd283!2s310%20Dehiwala%20Rd%2C%20Boralesgamuwa!5e0!3m2!1sen!2slk!4v1773144164668!5m2!1sen!2slk"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.908397040865!2d79.92542627499523!3d6.781002193215999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae24f85b9b7c6e5%3A0x982ca29c67904574!2s310%20Dewala%20Rd%2C%20Piliyandala!5e0!3m2!1sen!2slk!4v1773375541189!5m2!1sen!2slk"
             width="100%"
             height="450"
             style={{ border: 0, display: "block" }}
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            className="w-full h-[200px] sm:h-[300px] md:h-[350px] lg:h-[400px]" 
+            className="w-full h-[200px] sm:h-[300px] md:h-[350px] lg:h-[400px]"
             title="Our Location"
           ></iframe>
         </div>
       </div>
 
-     <ContactBanner/>
-     
+      <ContactBanner />
     </main>
   );
 }

@@ -212,7 +212,7 @@ const CompanyOverview = () => {
                 </div>
 
                 <h3
-                  className="text-2xl font-bold mb-4 md:max-w-sm"
+                  className="text-2xl font-bold md:max-w-sm"
                   style={{
                     background: "linear-gradient(to right, #89CA29, #41b2f8)",
                     WebkitBackgroundClip: "text",
@@ -222,6 +222,10 @@ const CompanyOverview = () => {
                 >
                   Eng. Preemal Kumara
                 </h3>
+
+                <p className="text-white text-sm leading-relaxed mb-4">
+                  MBA (UK) | MEM (OUSL) | BEng -Mechanical (UK) | HNDE-Mechanical | IEng | FIIESL | MEGSL | MCPMf
+                </p>
 
                 {/* Bio paragraphs */}
                 <p className="text-white text-sm leading-relaxed mb-4">
