@@ -2,17 +2,21 @@ import Image from "next/image";
 import Link from "next/link";
 
 const capabilities = [
-  "MEP Contracting",
-  "HVAC Solutions",
-  "Chemical Treatment",
-  "Trading & Logistics",
+  "Contracting & Trading",
+  "Air Conditioning Solutions",
+  "Fit-Out Jobs",
+  "Procurement",
+  "Industrial Ventilation & Cooling Solutions",
+  "HAVC Design Room"
 ];
 
 const companyLinks = [
   { label: "About Us", href: "/aboutUs" },
-  { label: "Engineering Academy", href: "/services/academy" },
-  { label: "Technical Standards", href: "/standards" },
-  { label: "Contact", href: "/contact" },
+  { label: "Engineering Services", href: "/services/engineer" },,
+  { label: "Academic Services", href: "/services/academy" },
+  { label: "Projects", href: "/projects" },
+  { label: "News & Events", href: "/news" },
+  { label: "Contact Us", href: "/contact" },
 ];
 
 const Footer = () => {
@@ -90,8 +94,8 @@ const Footer = () => {
         </div>
 
         <div>
-          <a href="mailto:info@pgengineeringandacademy.com" className="text-white hover:text-gray-300 transition duration-200">
-            info@pgengineeringandacademy.com
+          <a href="mailto:info@pdengineeringacademy.com" className="text-white hover:text-gray-300 transition duration-200">
+            info@pdengineeringacademy.com
           </a>
         </div>
 

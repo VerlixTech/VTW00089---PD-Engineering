@@ -291,7 +291,7 @@ export default function RootLayout({
       >
         <Header />
 
-        {children}
+            <AOSProvider>{children}</AOSProvider>  
         
         <Footer />
       </body>

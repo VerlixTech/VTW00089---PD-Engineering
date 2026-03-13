@@ -52,7 +52,7 @@ const IndustrialVentilation = () => {
                   src="/Industrial Ventilation & Cooling Solutions_02.svg"
                   alt="Industrial Ventilation & Cooling Solutions"
                   fill
-                  className="object-contain"
+                  className="object-cover"
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
