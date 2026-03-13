@@ -8,17 +8,17 @@ type LogoItem = {
 };
 
 const row1: LogoItem[] = [
-  { name: "MarqueesImg01", image: "/MarqueesImg01.svg" },
-  { name: "MarqueesImg02", image: "/MarqueesImg02.svg" },
-  { name: "MarqueesImg03", image: "/MarqueesImg03.svg" },
-  { name: "MarqueesImg04", image: "/MarqueesImg04.svg" },
+  { name: "MarqueesImg01", image: "logos/Logo_ccplc 1.svg" },
+  { name: "MarqueesImg02", image: "logos/Al-Abid-Group-01-2 1 (1).svg" },
+  { name: "MarqueesImg03", image: "logos/anglican 1 (1).svg" },
+  { name: "MarqueesImg04", image: "logos/images (2).svg" },
 ];
 
 const row2: LogoItem[] = [
-  { name: "CRB", image: "/crblogo 1.svg" },
-  { name: "Nalanda College", image: "/Logo_of_Nalanda_College_Colombo 1.svg" },
-  { name: "Elastomeric", image: "/elastomeric-eng 1.svg" },
-  { name: "McDonalds", image: "/mcdonalds-logo-mcdonald-icon-free-free-vector 1.svg" },
+  { name: "CRB", image: "logos/1736420775431 1.svg" },
+  { name: "Nalanda College", image: "logos/crblogo 1 (1).svg" },
+  { name: "Elastomeric", image: "logos/colombo-city-centre-colombo-city-centre-logo 1 (1).svg" },
+  { name: "McDonalds", image: "logos/Hayleys-Agriculture-Blog-Default 1.svg" },
 ];
 
 // Combine both rows
