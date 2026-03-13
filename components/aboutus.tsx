@@ -12,9 +12,9 @@ export function AboutUs() {
     >
 
       {/* Content */}
-      <div className="relative max-w-7xl mx-auto px-6 py-4 md:py-10 grid md:grid-cols-2 gap-6 md:gap-16 items-center mt-6 md:mt-0">
+      <div className="relative max-w-7xl mx-auto px-6 py-4 md:py-10 grid md:grid-cols-2 gap-6 md:gap-16 items-center mt-6 md:mt-0"  >
         {/* Right Content */}
-        <div>
+        <div >
           <h4 className="text-lg md:text-[36px] mb-2">About</h4>
           <h4 className="text-2xl md:text-[40px] font-semibold mb-4">
             PD Engineering <br className="max-md:hidden"/>& Academy
@@ -35,7 +35,7 @@ export function AboutUs() {
         </div>
 
         {/* Left Image */}
-        <div className="relative">
+        <div className="relative" data-aos="fade-right" data-aos-duration="1000">
           <Image
             src="/havc.svg"
             alt="Engineering Training"

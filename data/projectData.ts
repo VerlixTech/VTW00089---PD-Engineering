@@ -8,18 +8,19 @@ export type Project = {
 
 export const projectData: Project[] = [
   {
-    title: "COMPLETED AC DUCTING WORKS AL BIDDA TOWER - QATAR",
+    title: "AL BIDDA TOWER - QATAR",
     image: "/projectIMG01.svg",
     description:
-      "Comprehensive MEP solutions for a luxury resort, featuring high-efficiency chillers designed for saline coastal environments.",
-    highlights: ["200+ Guest Rooms MEP", "Industrial Kitchen Ventilation"],
+      "Completed AC Ducting Works at Al Bidda Tower, Qatar.",
+    highlights: [],
+    status: "HANDED OVER",
   },
   {
     title: "Sayura Beach Hotel",
     image: "/Sayura Beach Hotel.svg",
     description:
-      "Comprehensive MEP solutions for a luxury resort, featuring high-efficiency chillers designed for saline coastal environments.",
-    highlights: ["200+ Guest Rooms MEP", "Industrial Kitchen Ventilation"],
+      "Completed MEP works for a luxury resort, featuring high-efficiency chillers designed for saline coastal environments.",
+    highlights: [],
     status: "HANDED OVER",
   },
    {
@@ -27,14 +28,15 @@ export const projectData: Project[] = [
     image: "/Hayleys Nature Next.svg",
     description:
       "Ventilation system including evaporative cooling system was designed, supplied, and is being installed at the proposed factory building for Hayleys Agriculture located in the Bingiriya Free Trade Zone.",
-    highlights: ["Engineering Design", "Equipment Supply","Professional Installation","Systematic Testing and Commissioning"],
+    highlights: [],
+    status: "HANDED OVER",
   },
   {
-    title: "Sayura Beach Hotel",
-    image: "/Sayura Beach Hotel.svg",
+    title: "The Anglican Centre - QATAR",
+    image: "/successProject02.svg",
     description:
-      "Comprehensive MEP solutions for a luxury resort, featuring high-efficiency chillers designed for saline coastal environments.",
-    highlights: ["200+ Guest Rooms MEP", "Industrial Kitchen Ventilation"],
+      "Completed fire rated duct works and cold air duct.",
+    highlights: [],
     status: "HANDED OVER",
   },
 ];

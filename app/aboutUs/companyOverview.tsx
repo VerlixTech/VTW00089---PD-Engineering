@@ -98,8 +98,8 @@ const CompanyOverview = () => {
           </div>
 
           {/* Images */}
-          <div className="grid grid-cols-2 gap-3 h-[420px]">
-            <div className="relative w-full h-full overflow-hidden rounded-lg">
+          <div className="grid grid-cols-2 gap-3 h-[420px]" >
+            <div className="relative w-full h-full overflow-hidden rounded-lg" data-aos="fade-right" data-aos-duration="1000">
               <Image
                 src="/Gallery03.svg"
                 alt="AboutUsImg01"
@@ -109,7 +109,7 @@ const CompanyOverview = () => {
             </div>
 
             <div className="flex flex-col gap-3 h-full">
-              <div className="relative w-full flex-1 overflow-hidden rounded-lg">
+              <div className="relative w-full flex-1 overflow-hidden rounded-lg" data-aos="fade-right" data-aos-duration="1000">
                 <Image
                   src="/About02.svg"
                   alt="AboutUsImg02"
@@ -117,7 +117,7 @@ const CompanyOverview = () => {
                   className="object-cover"
                 />
               </div>
-              <div className="relative w-full flex-1 overflow-hidden rounded-lg">
+              <div className="relative w-full flex-1 overflow-hidden rounded-lg" data-aos="fade-right" data-aos-duration="1000">
                 <Image
                   src="/About03.svg"
                   alt="AboutUsImg03"
@@ -182,7 +182,7 @@ const CompanyOverview = () => {
         </section>
 
         {/* Leadership */}
-        <section className="pb-8 md:pb-16">
+        <section className="pb-8 md:pb-16" data-aos="fade-right" data-aos-duration="1000">
           <div>
             <div
               className="rounded-2xl px-10 py-12 flex flex-col md:flex-row gap-10 items-center"

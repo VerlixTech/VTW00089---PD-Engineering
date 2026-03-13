@@ -13,21 +13,6 @@ const GalleryGrid = () => {
     { src: "/Gallery04.svg", alt: "Pipe and duct installation" },
     { src: "/Gallery05.svg", alt: "Industrial pump system installation" },
     { src: "/Gallery06.svg", alt: "HVAC academy training session" },
-// images for second grid
-    { src: "/Gallery01.svg", alt: "HVAC duct installation on ceiling" },
-    { src: "/Gallery02.svg", alt: "Air conditioning unit internal components" },
-    { src: "/Gallery03.svg", alt: "HVAC technicians on site" },
-    { src: "/Gallery04.svg", alt: "Pipe and duct installation" },
-    { src: "/Gallery05.svg", alt: "Industrial pump system installation" },
-    { src: "/Gallery06.svg", alt: "HVAC academy training session" },
-
-  // images for third grid
-    { src: "/Gallery01.svg", alt: "HVAC duct installation on ceiling" },
-    { src: "/Gallery02.svg", alt: "Air conditioning unit internal components" },
-    { src: "/Gallery03.svg", alt: "HVAC technicians on site" },
-    { src: "/Gallery04.svg", alt: "Pipe and duct installation" },
-    { src: "/Gallery05.svg", alt: "Industrial pump system installation" },
-    { src: "/Gallery06.svg", alt: "HVAC academy training session" },
   ];
 
   const handleViewMore = () => {
@@ -90,7 +75,7 @@ const GalleryGrid = () => {
         {/* Mobile — stacked images one by one downwards */}
         <div className="block md:hidden space-y-3">
           {galleryImages.slice(0, visibleGrids * 6).map((image, index) => (
-            <div key={index} className="relative w-full h-[220px] overflow-hidden rounded-lg">
+            <div key={index} className="relative w-full h-[260px] overflow-hidden rounded-lg">
               <Image
                 src={image.src}
                 alt={image.alt}

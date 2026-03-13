@@ -36,10 +36,10 @@ export const newsData: NewsItem[] = [
   },
   {
     category: "Projects",
-    date: "October 24, 2023",
+    date: "March 09, 2026",
     title: "Hayleys nature next (PVT) LTD ",
     image: "/News01.svg",
-    imageCaption: "PROJECT: Hayleys nature next (PVT) LTD",
+    imageCaption: "PROJECT: Hayleys Nature Next (PVT) LTD",
     excerpt:
       "he complete ventilation system including evaporative cooling system was designed, supplied, and is being installed at the proposed factory building for Hayleys Agriculture located in the Bingiriya Free Trade Zone.",
     fullContent:

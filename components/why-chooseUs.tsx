@@ -11,7 +11,7 @@ const features = [
 const WhyChooseUs = () => {
   return (
     <section className="w-full bg-[#07131a] text-white py-10 px-6">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-7 gap-4 md:gap-12 items-center">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-7 gap-4 md:gap-12 items-center" data-aos="fade-right" data-aos-duration="1000">
         {/* Left Side */}
         <div className="col-span-3">
           <p className=" uppercase font-bold text-2xl max-lg:text-xs tracking-widest text-text-[#FFFFFF] mb-4">
@@ -47,9 +47,9 @@ const WhyChooseUs = () => {
           </p>
 
           {/* Features */}
-          <div className="space-y-2 md:space-y-3 pt-2 md:pt-4">
+          <div className="space-y-2 md:space-y-3 pt-2 md:pt-4" >
             {features.map((item, index) => (
-              <div key={index} className="flex items-center gap-3">
+              <div key={index} className="flex items-center gap-3" >
                 <div className="w-[4px] h-5 bg-[#89CA29]" />
                 <p className="text-white md:text-base max-md:text-xs font-bold">{item}</p>
               </div>
