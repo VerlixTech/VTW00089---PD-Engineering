@@ -53,7 +53,7 @@ const ContactHero = () => {
             </p>
             <p className="text-white text-lg md:text-xl mb-1">+94 11 218 3349</p>
             <p className="text-white text-lg md:text-xl mb-1">+94 71 062 5942</p>
-            <p className="text-[#9CA3AF] text:base md:text-lg">info@pdengineeringandacademy.com</p>
+            <p className="text-[#9CA3AF] text:base md:text-lg">info@pdengineeringacademy.com</p>
           </div>
         </div>
       </div>
