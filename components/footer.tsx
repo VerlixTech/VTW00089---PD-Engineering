@@ -12,7 +12,7 @@ const capabilities = [
 
 const companyLinks = [
   { label: "About Us", href: "/aboutUs" },
-  { label: "Engineering Services", href: "/services/engineer" },,
+  { label: "Engineering Services", href: "/services/engineer" },
   { label: "Academic Services", href: "/services/academy" },
   { label: "Projects", href: "/projects" },
   { label: "News & Events", href: "/news" },
