@@ -4,9 +4,9 @@ const CONTACT_MESSAGE_FIELDS = {
   name: "Name",
   email: "From",
   phone: "Mobile Number",
-  message: "Message",
+    serviceType: "Service Type",
+  message: "Message"
 };
-
 const generateEmailContent = (data) => {
   const stringData = Object.entries(data).reduce(
     (str, [key, val]) => (str += `${CONTACT_MESSAGE_FIELDS[key]}:\n${val}\n\n`),

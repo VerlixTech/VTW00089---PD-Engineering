@@ -8,7 +8,7 @@ import { ArrowRight } from "lucide-react";
 export function ContactSection() {
   const [formData, setFormData] = useState({
     name: "",
-    company: "",
+    phone: "",
     email: "",
     serviceType: "",
     message: "",
@@ -20,17 +20,33 @@ export function ContactSection() {
     e.preventDefault();
     setIsLoading(true);
     try {
-      const response = await sendContactForm(formData);
+      const payload = {
+        name: `${formData.name}`,
+        email: formData.email,
+        phone: formData.phone,
+        message: formData.message,
+        serviceType: formData.serviceType,
+      };
+      const response = await sendContactForm(payload);
       if (response && response.success) {
-        setFormData({ name: "", company: "", email: "", serviceType: "", message: "" });
+        setFormData({
+          name: "",
+          phone: "",
+          email: "",
+          message: "",
+          serviceType: "",
+        });
+         toast.success("Your message has been sent successfully!");
       } else {
-        toast.error("There was an issue sending your message. Please try again later.");
+        toast.error(
+          "There was an issue sending your message. Please try again later.",
+        );
       }
     } catch (error) {
       if (error) {
         toast.error("Error: Failed to send message. Please try again later.");
       }
-    } finally {
+    }finally {
       setIsLoading(false);
     }
   };
@@ -84,12 +100,12 @@ export function ContactSection() {
                 <div>
                   <label className={labelClass}>Company Name</label>
                   <input
-                    id="company"
-                    name="company"
-                    type="text"
-                    value={formData.company}
+                    id="phone"
+                    name="phone"
+                    type="tel"
+                    value={formData.phone}
                     onChange={handleChange}
-                    placeholder="Organization"
+                    placeholder="Mobile Number"
                     className={inputClass}
                   />
                 </div>
@@ -120,11 +136,8 @@ export function ContactSection() {
                     className={`${inputClass} cursor-pointer`}
                   >
                     <option value="" disabled>Select a Service</option>
-                    <option value="a">A</option>
-                    <option value="b">B</option>
-                    <option value="c">C</option>
-                    <option value="d">D</option>
-                    <option value="e">E</option>
+                    <option value="Engineering">Engineering</option>
+                    <option value="Academic">Academic</option>
                   </select>
                 </div>
               </div>
