@@ -24,7 +24,7 @@ export const projectData: Project[] = [
   },
    {
     title: "Hayleys Nature Next",
-    image: "/projectIMG01.svg",
+    image: "/Hayleys Nature Next.svg",
     description:
       "Ventilation system including evaporative cooling system was designed, supplied, and is being installed at the proposed factory building for Hayleys Agriculture located in the Bingiriya Free Trade Zone.",
     highlights: ["Engineering Design", "Equipment Supply","Professional Installation","Systematic Testing and Commissioning"],
