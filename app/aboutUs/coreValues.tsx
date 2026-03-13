@@ -16,7 +16,7 @@ const values = [
   {
     icon: Lightbulb,
     title: "Technical Quality",
-    description: "Embracing the latest digital tools and green technologies",
+    description: "Accurate Design, Embracing the latest digital tools and green technologies",
   },
 ];
 

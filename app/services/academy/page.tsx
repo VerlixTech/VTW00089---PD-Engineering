@@ -15,7 +15,7 @@ export default function AcademyServicesPage() {
     <main className="min-h-screen ">
         <PageHero 
             title="Academy"
-            heading="delivering practical, industry-oriented HVAC design education"
+            heading="Delivering Practical, Industry-Oriented HVAC Design Education"
             subHeading="PD Engineering & Academy is a professional training platform dedicated to developing practical, industry-ready HVAC engineers."
         />
 

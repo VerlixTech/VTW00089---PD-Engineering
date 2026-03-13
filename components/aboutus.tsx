@@ -20,14 +20,14 @@ export function AboutUs() {
             PD Engineering <br className="max-md:hidden"/>& Academy
           </h4>
 
-          <p className="lg:text-lg text-base text-gray-300 leading-relaxed ">
+          <p className="lg:text-lg text-base leading-relaxed ">
             PD Engineering & Academy provides professional HVAC design
             training and engineering solutions. Our programs are designed
             to bridge the gap between academic knowledge and real-world
             engineering practices.
           </p>
 
-          <p className="lg:text-lg text-base text-gray-400 mt-4">
+          <p className="lg:text-lg text-base mt-4 ">
             With years of industry experience, we empower engineers with
             practical design knowledge, consultancy exposure, and hands-on
             engineering tools.

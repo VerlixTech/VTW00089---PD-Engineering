@@ -24,7 +24,7 @@ const PageHero = ({ title, heading, subHeading }: PageHeroProps) => {
         }}
       />
 
-      <div className="relative z-10 text-center px-6 max-md:py-12 mt-[-10%]">
+      <div className="relative z-10 text-center px-6 max-md:py-12 mt-[-15%] md:mt-[-5%]">
         {/* Badge */}
         {title && (
           <div className="inline-flex items-center gap-2 border border-blue-500 rounded-full px-5 py-2 mb-6 bg-[#0a0f1e]">
