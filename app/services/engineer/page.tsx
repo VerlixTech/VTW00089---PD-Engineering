@@ -1,6 +1,7 @@
 import PageHero from "@/components/pageHero";
 import CoreEngineeringServices from "./coreServices";
 import Banner from "@/components/banner";
+import IndustrialVentilation from "./industrialVentilation";
 
 export const metadata = {
   title: "Engineer Services - PD Engineering & Academy",
@@ -17,6 +18,8 @@ export default function EngineerServicesPage() {
       />
 
       <CoreEngineeringServices />
+
+      <IndustrialVentilation />
 
       <Banner
         heading="Let's Build Something Great Together"
