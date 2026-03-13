@@ -8,7 +8,6 @@ const OurQualification = () => {
 
 const certificates = [
   "/certificates/Certificate.svg",
-  "/certificates/projectIMG01.svg",
 ];
 
   return (
@@ -32,7 +31,7 @@ const certificates = [
         <div className="flex justify-center max-md:mt-8 mb-12">
           <button
             onClick={() => setOpen(true)}
-            className="bg-[#0A1620] hover:bg-[#0A1620]/90 text-white font-bold py-2 px-6 rounded-lg text-base md:text-2xl"
+            className="bg-[#0A1620] hover:bg-[#0A1620]/90 text-white font-bold py-2 px-6 rounded-lg text-base md:text-xl"
           >
             View Certificates
           </button>
