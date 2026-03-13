@@ -21,7 +21,7 @@ export function Header() {
           {/* Logo */}
 
           <Link href="/" className="flex items-center gap-2" onClick={closeMobileMenu}>
-            <Image src="/logo Png.png" alt="PD Engineering" width={50} height={50} />
+            <Image src="/logo.svg" alt="PD Engineering" width={50} height={50} />
           </Link>
 
           {/* Desktop Navigation */}
