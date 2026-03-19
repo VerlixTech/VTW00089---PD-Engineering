@@ -15,7 +15,7 @@ export const newsData: NewsItem[] = [
     date: "January 24, 2026",
     title: "Eng. Preemal Kumara Marks Over 18 Years of Professional Excellence ",
     image: "/NewsImage02.svg",
-    imageCaption: "PROJECT",
+    imageCaption: "Eng. Preemal Kumara",
     excerpt:
       "PD Engineering & Academy proudly recognizes the remarkable professional journey of Preemal Kumara, who has successfully completed over 18 years of experience in the Mechanical and HVAC engineering industry, working across Sri Lanka and the Middle East, particularly Qatar. Throughout his career, Eng. Kumara has played a significant role in HVAC system design, installation, optimization, and electromechanical services, contributing to numerous complex engineering projects in both local and international markets. His expertise also extends to cooling water treatment systems and advanced VRF air-conditioning technologies, where he is recognized as a certified specialist.",
     fullContent:
