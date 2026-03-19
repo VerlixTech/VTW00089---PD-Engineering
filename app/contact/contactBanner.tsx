@@ -23,9 +23,8 @@ corporate milestones.
 
         <div className="flex items-center gap-8 mt-2">
           {[
-            { label: "LINKEDIN", href: "#" },
-            { label: "YOUTUBE", href: "#" },
-            { label: "FACEBOOK", href: "#" },
+            { label: "LINKEDIN", href: "https://www.linkedin.com/company/pd-engineering-academy" },
+            { label: "FACEBOOK", href: "https://web.facebook.com/profile.php?id=61586239766177" },
           ].map((social) => (
             <Link
               key={social.label}

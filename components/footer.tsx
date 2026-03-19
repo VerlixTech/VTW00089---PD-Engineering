@@ -88,9 +88,8 @@ const Footer = () => {
 
       <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row items-center justify-between gap-4 text-gray-500 text-sm">
         <div className="flex items-center gap-6">
-          <Link href="#" className="text-white hover:text-gray-300 transition duration-200">LinkedIn</Link>
-          <Link href="#" className="text-white hover:text-gray-300 transition duration-200">Youtube</Link>
-          <Link href="#" className="text-white hover:text-gray-300 transition duration-200">Facebook</Link>
+          <Link href="https://www.linkedin.com/company/pd-engineering-academy" className="text-white hover:text-gray-300 transition duration-200">LinkedIn</Link>
+          <Link href="https://web.facebook.com/profile.php?id=61586239766177" className="text-white hover:text-gray-300 transition duration-200">Facebook</Link>
         </div>
 
         <div>
@@ -109,7 +108,9 @@ const Footer = () => {
         </div>
 
         <div className="text-right text-[10px] uppercase tracking-wider text-[#D1D5DB] ">
-          <p>© 2026 VERLIXTECH (PVT) LTD.</p>
+         <Link href="https://www.verlixtech.com" className="text-white hover:text-gray-300 transition duration-200">
+            © 2026 VERLIXTECH (PVT) LTD.
+          </Link>
           <p>ALL RIGHTS RESERVED.</p>
         </div>
       </div>
