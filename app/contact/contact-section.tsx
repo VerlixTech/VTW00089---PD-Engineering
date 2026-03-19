@@ -98,7 +98,7 @@ export function ContactSection() {
                   />
                 </div>
                 <div>
-                  <label className={labelClass}>Company Name</label>
+                  <label className={labelClass}>Mobile Number</label>
                   <input
                     id="phone"
                     name="phone"
