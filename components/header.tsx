@@ -67,7 +67,7 @@ export function Header() {
     pathname === "/services/engineer" ? "text-[#89CA29]" : "text-white"
   }`}
 >
-  Engineer
+  Engineering
 </Link>
 
 <Link
@@ -152,7 +152,7 @@ export function Header() {
                    className={`hover:text-[#89CA29] ${pathname === "/services/engineer" ? "text-[#89CA29]" : ""}`}
                   onClick={closeMobileMenu}
                 >
-                  Engineer
+                  Engineering
                 </Link>
 
                 <Link 
