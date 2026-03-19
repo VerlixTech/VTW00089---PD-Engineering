@@ -17,7 +17,6 @@ const row1: LogoItem[] = [
 const row2: LogoItem[] = [
   { name: "CRB", image: "logos/1736420775431 1.svg" },
   { name: "Nalanda College", image: "logos/crblogo 1 (1).svg" },
-  { name: "Elastomeric", image: "logos/colombo-city-centre-colombo-city-centre-logo 1 (1).svg" },
   { name: "McDonalds", image: "logos/Hayleys-Agriculture-Blog-Default 1.svg" },
 ];
 

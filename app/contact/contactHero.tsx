@@ -42,7 +42,7 @@ const ContactHero = () => {
               Our Headquarters
             </p>
             <p className="text-white text-base leading-relaxed">
-              No. 310, Dehiwala Road,<br />
+              No. 310/A, Dewala Road,<br />
               Bataketthara, Piliyandala, Sri Lanka
             </p>
           </div>
