@@ -37,8 +37,7 @@ const OurServices = () => {
         {/* Heading */}
         <h2 className="text-2xl md:text-[40px] font-bold mb-4">Our Services</h2>
         <p className="text-gray-600 max-w-2xl mx-auto mb-14 lg:text-lg text-base text-center">
-          It is a long established fact that a reader will be distracted by the
-          readable content of a page when looking at its layout.
+          Delivering reliable engineering, HVAC, and training solutions tailored to meet modern industry demands.
         </p>
 
         {/* Desktop Cards */}
