@@ -17,8 +17,7 @@ const Partners = () => {
           </div>
 
           <p className="text-gray-600 text:base md:text-xl mt-4">
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout.
+            We collaborate with trusted industry partners to deliver high-quality solutions and ensure project excellence.
           </p>
         </div>
       </div>
